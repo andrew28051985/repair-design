@@ -1,23 +1,35 @@
-const gulp = require('gulp');
+const {src, dest, watch, parallel} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
+const sass = require('gulp-sass');
 
-gulp.task('css-min-create', function(cb){
-  return gulp.src('./css/style.css')
-  .pipe(cssnano())
-  .pipe(rename({suffix: '.min'}))
-  .pipe (gulp.dest('./css'));
-  cb();
-});
-
-gulp.task('start-gulp', function() {
+function bs() {
+  serveSass();
   browserSync.init({
       server: {
           baseDir: "./"
       }
   });  
-  gulp.watch("./*.html").on("change", browserSync.reload);
-  gulp.watch('./css/*.css').on("change", browserSync.reload);
-  gulp.watch('./css/*.css').on("change", gulp.parallel('css-min-create'));
-});
+  watch("./*.html").on("change", browserSync.reload);
+  watch("./sass/**/*.sass", serveSass);
+  watch('./css/*.css').on("change", browserSync.reload);
+  watch('./css/*.css').on("change", cssmin);
+  watch('./js/*.js').on("change", browserSync.reload);  
+};
+
+function cssmin() {  
+  return src("./css/style.css")
+      .pipe(cssnano())
+      .pipe(rename({suffix: ".min"}))
+      .pipe (dest("./css"));
+};
+
+function serveSass() {
+  return src("./sass/*.sass")
+      .pipe(sass())
+      .pipe(dest("./css"))
+      .pipe(browserSync.stream());
+};
+
+exports.serve = bs;
