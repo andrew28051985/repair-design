@@ -325,7 +325,7 @@ template {
 .button {
   padding: 23px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 2px;
   text-transform: uppercase; }
   .button--primary {
     background-color: #e3b873;
