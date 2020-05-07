@@ -1,4 +1,4 @@
-const {src, dest, watch, parallel} = require('gulp');
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
@@ -14,6 +14,7 @@ function bs() {
   });  
   watch("./*.html").on("change", browserSync.reload);
   watch("./sass/**/*.sass", serveSass);
+  watch("./sass/**/*.scss", serveSass);
   watch('./css/*.css').on("change", browserSync.reload);
   watch('./css/*.css').on("change", cssmin);
   watch('./js/*.js').on("change", browserSync.reload);  
@@ -27,7 +28,7 @@ function cssmin() {
 };
 
 function serveSass() {
-  return src("./sass/*.sass")
+  return src("./sass/**/*.sass", "./sass/**/*.scss")
       .pipe(sass())
       .pipe(autoprefixer({
         cascade: false }))
