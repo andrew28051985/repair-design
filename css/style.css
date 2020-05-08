@@ -374,12 +374,21 @@ template {
   background: #131313 url("../img/bg-hero.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
+  .hero::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0; }
   .hero__text {
     font-size: 22px;
     line-height: 30px;
     max-width: 500px; }
   .hero__content {
-    max-width: 670px; }
+    max-width: 670px;
+    position: relative; }
   .hero__instagram {
     max-width: 80px;
     height: 100%;
@@ -399,6 +408,14 @@ template {
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none; }
+    .hero__scroll-down::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background: url("../img/arrow_down.svg") no-repeat center;
+      border: 2px solid #e3b873;
+      border-radius: 50%;
+      margin-left: 12px; }
   .hero__button {
     margin-right: 20px; }
 
@@ -408,10 +425,20 @@ template {
   justify-content: center;
   align-items: center; }
   .instagram__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #e3b873;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    line-height: 0.8; }
+    .instagram__link::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background: #e3b873;
+      margin-left: 8px; }
 
 .title {
   font-family: 'Yeseva One', cursive;
