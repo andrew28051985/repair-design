@@ -347,6 +347,25 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
 
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase; }
+  .section-title__img {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__img::after, .section-title__img::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      border-radius: 30px;
+      background: #e3b873;
+      margin: 0 10px; }
+
 .header {
   position: fixed;
   left: 0;

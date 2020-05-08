@@ -3,3 +3,22 @@
 body
   font-family: 'Futura Book', sans-serif
   font-size: 14px
+.section
+  &-title
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase
+    &__img 
+      display: flex
+      justify-content: center
+      align-items: center
+      &::after, &::before
+        content: ""
+        width: 32px
+        height: 2px
+        border-radius: 30px
+        background: $primary
+        margin: 0 10px
