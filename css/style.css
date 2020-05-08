@@ -354,9 +354,13 @@ template {
   text-transform: uppercase; }
 
 .nav__item {
+  text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #e3b873; }
 
 .phone {
   color: #e3b873; }
