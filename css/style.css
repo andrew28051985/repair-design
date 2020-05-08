@@ -340,6 +340,13 @@ template {
     background-color: transparent;
     border: 1px solid #ffffff; }
 
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 14px; }
+
 .header {
   position: fixed;
   left: 0;
@@ -456,10 +463,3 @@ template {
   margin: 0; }
   .title--primary {
     color: #e3b873; }
-
-*, *:after, *:before {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
