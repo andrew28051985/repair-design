@@ -1,4 +1,49 @@
 @media screen and (max-width: 1366px)
-  .container
-    max-width: 1200px
-    width: 85%  
+  html
+    font-size: 13px
+@media screen and (max-width: 1200px)  
+  html
+    font-size: 12px
+  .nav__item
+    margin-right: 0.857rem  
+@media screen and (max-width: 992px)      
+  .nav
+    display: none
+  .instagram
+    display: none  
+  .hero
+    &__content
+      margin-left: 0   
+    &__scroll-down
+      min-width: 180px;
+      min-height: 60px;  
+@media screen and (max-width: 576px)
+  .contacts
+    &__button
+      display: none
+    &__phone
+      color: $light
+      text-decoration: none
+      margin: 0
+  .hero
+    &__scroll-down
+      display: none        
+    &__title
+      font-size: 1.916rem
+    &__text
+      font-size: 1.5rem
+    &__content
+      max-width: 26.83rem   
+      margin: auto 
+    &__button
+      width: 100%
+      margin-bottom: 26px  
+@media screen and (max-height: 570px)      
+  .hero
+    &__scroll-down
+      display: none
+@media screen and (max-height: 450px) and (max-width: 570px)  
+  .hero
+    height: 100%  
+
+          

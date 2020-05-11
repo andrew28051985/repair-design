@@ -4,7 +4,7 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  padding-top: 110px
+  padding-top: 7.857rem
   background: $dark url("../img/bg-hero.jpg") no-repeat center / cover
   height: 100vh
   color: $light
@@ -16,15 +16,23 @@
     position: absolute
     left: 0
     top: 0
+  &__title
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.857rem
+    text-transform: uppercase
+    margin: 0  
+    &--primary
+     color: $primary  
   &__text
     font-size: 1.57rem;
     line-height: 30px;
-    max-width: 500px
+    max-width: 35.714rem
   &__content
-    max-width: 670px
+    max-width: 47.857rem
     position: relative
+    margin-left: 3.928rem
   &__instagram
-    max-width: 80px
+    max-width: 5.714rem
     height: 100%
     position: absolute
     top: 0
@@ -72,10 +80,3 @@
       height: 1px
       background: $primary
       margin-left: 8px
-.title
-  font-family: 'Yeseva One', cursive;
-  font-size: 2.857rem
-  text-transform: uppercase
-  margin: 0  
-  &--primary
-    color: $primary
