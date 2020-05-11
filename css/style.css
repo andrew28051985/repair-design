@@ -533,25 +533,42 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 576px) {
+  .menu__logo {
+    letter-spacing: 0.089em;
+    font-size: 0.82rem;
+    line-height: 1.142rem; }
   .contacts__button {
     display: none; }
   .contacts__phone {
     color: #ffffff;
     text-decoration: none;
+    letter-spacing: -0.04rem;
     margin: 0; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__title {
-    font-size: 1.916rem; }
-  .hero__text {
-    font-size: 1.5rem; }
-  .hero__content {
-    max-width: 26.83rem;
-    margin: auto; }
-  .hero__button {
-    width: 100%;
-    margin-bottom: 26px;
-    margin-right: 0; } }
+  .hero {
+    display: block;
+    padding-top: 10.79rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__title {
+      font-size: 1.916rem;
+      letter-spacing: -0.142rem;
+      line-height: 2.4rem;
+      margin-bottom: 0.8rem; }
+    .hero__text {
+      margin: 0;
+      letter-spacing: -0.066rem;
+      line-height: 1.89rem;
+      font-size: 1.5rem; }
+    .hero__content {
+      max-width: 26.83rem;
+      margin: auto; }
+    .hero__button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2.05rem;
+      letter-spacing: 0.0098rem; }
+    .hero__buttons {
+      margin-top: 2.5rem; } }
 
 @media screen and (max-height: 570px) {
   .hero__scroll-down {
