@@ -498,13 +498,14 @@ body {
     text-decoration: none;
     color: #e3b873;
     transform: rotate(90deg);
-    line-height: 0.8; }
+    line-height: 0.8;
+    letter-spacing: 0.05rem; }
     .instagram__link::after {
       content: "";
       width: 50px;
       height: 1px;
       background: #e3b873;
-      margin-left: 8px; }
+      margin-left: 0.8rem; }
 
 .button--outline {
   padding: 1.2rem 3.2rem; }
