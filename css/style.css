@@ -550,7 +550,8 @@ body {
     margin: auto; }
   .hero__button {
     width: 100%;
-    margin-bottom: 26px; } }
+    margin-bottom: 26px;
+    margin-right: 0; } }
 
 @media screen and (max-height: 570px) {
   .hero__scroll-down {
