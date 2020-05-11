@@ -19,6 +19,9 @@
   &__title
     font-family: 'Yeseva One', cursive;
     font-size: 2.857rem
+    line-height: 3.9rem
+    font-weight: normal
+    letter-spacing: -0.009rem
     text-transform: uppercase
     margin: 0  
     &--primary
@@ -27,6 +30,7 @@
     font-size: 1.57rem;
     line-height: 30px;
     max-width: 35.714rem
+    margin: 1rem 0
   &__content
     max-width: 47.857rem
     position: relative
@@ -48,8 +52,10 @@
     min-height: 97px
     background-color: $dark
     color: $light
+    font-size: 0.857rem
     text-transform: uppercase
     text-decoration: none
+    letter-spacing: 0.098rem;
     &::after
       content: ""
       width: 30px
@@ -57,9 +63,15 @@
       background: url("../img/arrow_down.svg") no-repeat center
       border: 2px solid $primary
       border-radius: 50%
-      margin-left: 12px      
+      margin-left: 1.1rem      
   &__button
-    margin-right: 20px  
+    padding: 1.357rem 1.857rem
+    margin-right: 1.2rem
+    font-weight: 500;
+    font-size: 0.95rem
+    line-height: 1.0714rem
+  &__buttons
+    margin-top: 3.3rem    
 .instagram
   background-color: $dark
   display: flex
@@ -80,3 +92,5 @@
       height: 1px
       background: $primary
       margin-left: 8px
+.button--outline
+  padding: 1.2rem 3.2rem;      

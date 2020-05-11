@@ -324,7 +324,7 @@ template {
   margin: auto; }
 
 .button {
-  padding: 13px 20px;
+  padding: 0.785rem 1.428rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -382,16 +382,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__logo {
+    font-weight: 500;
+    font-size: 1.082rem;
+    line-height: 1.142rem; }
+  .menu__nav {
+    margin-right: -1.18rem; }
 
 .logo {
   color: #e3b873;
   text-transform: uppercase; }
 
 .nav__item {
+  font-weight: normal;
+  line-height: 1.142rem;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.857rem;
+  margin-right: 2.668rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #e3b873; }
@@ -400,7 +408,7 @@ body {
   color: #e3b873; }
 
 .contacts__phone {
-  margin-right: 3.214rem; }
+  margin-right: 2.95rem; }
 
 .hero {
   position: relative;
@@ -423,6 +431,9 @@ body {
   .hero__title {
     font-family: 'Yeseva One', cursive;
     font-size: 2.857rem;
+    line-height: 3.9rem;
+    font-weight: normal;
+    letter-spacing: -0.009rem;
     text-transform: uppercase;
     margin: 0; }
     .hero__title--primary {
@@ -430,7 +441,8 @@ body {
   .hero__text {
     font-size: 1.57rem;
     line-height: 30px;
-    max-width: 35.714rem; }
+    max-width: 35.714rem;
+    margin: 1rem 0; }
   .hero__content {
     max-width: 47.857rem;
     position: relative;
@@ -452,8 +464,10 @@ body {
     min-height: 97px;
     background-color: #131313;
     color: #ffffff;
+    font-size: 0.857rem;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    letter-spacing: 0.098rem; }
     .hero__scroll-down::after {
       content: "";
       width: 30px;
@@ -461,9 +475,15 @@ body {
       background: url("../img/arrow_down.svg") no-repeat center;
       border: 2px solid #e3b873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 1.1rem; }
   .hero__button {
-    margin-right: 20px; }
+    padding: 1.357rem 1.857rem;
+    margin-right: 1.2rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.0714rem; }
+  .hero__buttons {
+    margin-top: 3.3rem; }
 
 .instagram {
   background-color: #131313;
@@ -485,6 +505,9 @@ body {
       height: 1px;
       background: #e3b873;
       margin-left: 8px; }
+
+.button--outline {
+  padding: 1.2rem 3.2rem; }
 
 @media screen and (max-width: 1366px) {
   html {
