@@ -531,6 +531,6 @@ body {
   .hero__scroll-down {
     display: none; } }
 
-@media screen and (max-height: 450px) and (max-width: 570px) {
+@media screen and (max-height: 450px) and (max-width: 992px) {
   .hero {
     height: 100%; } }
