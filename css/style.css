@@ -343,9 +343,12 @@ template {
 *, *:after, *:before {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   display: flex;
@@ -418,7 +421,7 @@ body {
     left: 0;
     top: 0; }
   .hero__text {
-    font-size: 22px;
+    font-size: 1.57rem;
     line-height: 30px;
     max-width: 500px; }
   .hero__content {
@@ -477,7 +480,7 @@ body {
 
 .title {
   font-family: 'Yeseva One', cursive;
-  font-size: 40px;
+  font-size: 2.857rem;
   text-transform: uppercase;
   margin: 0; }
   .title--primary {
