@@ -353,28 +353,43 @@ body {
 img {
   max-width: 100%; }
 
-.section-title {
-  margin-bottom: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1.75rem;
-  letter-spacing: -0.045rem; }
-  .section-title__img {
+.section {
+  margin-bottom: 4rem; }
+  .section-title {
+    margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .section-title__img::after, .section-title__img::before {
-      content: "";
-      width: 32px;
-      height: 2px;
-      border-radius: 30px;
-      background: #e3b873;
-      margin: 0 10px; }
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.75rem;
+    letter-spacing: -0.045rem; }
+    .section-title__img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__img::after, .section-title__img::before {
+        content: "";
+        width: 32px;
+        height: 2px;
+        border-radius: 30px;
+        background: #e3b873;
+        margin: 0 10px; }
+
+.title-text {
+  font-weight: normal;
+  font-size: 1.17rem;
+  line-height: 1.93rem;
+  text-align: center;
+  color: #363636;
+  text-transform: none; }
+
+.team {
+  background: #131313;
+  height: 45rem;
+  margin-top: -34.5rem; }
 
 .header {
   position: fixed;
@@ -572,36 +587,16 @@ img {
   font-weight: normal;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
-@media screen and (max-width: 992px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__col {
-    margin-bottom: 4.29rem; } }
+.design__title-text {
+  font-family: 'Futura Book', sans-serif;
+  max-width: 52.93rem;
+  width: 80%; }
 
-@media screen and (max-width: 576px) {
-  .section-title {
-    font-size: 1.3rem;
-    letter-spacing: -0.09rem; }
-  .card__text {
-    margin-left: 0;
-    margin-top: -12.29rem;
-    max-width: 22.57rem; }
-  .card__list {
-    padding: 0 0 1rem 1.2rem; }
-  .card__item {
-    line-height: 1.9rem; }
-  .card__price-tag {
-    bottom: -1.05rem;
-    padding: 0.8rem 2.7rem; }
-  .types__col {
-    margin-bottom: 5.9rem; }
-  .types__section-title {
-    margin-bottom: 3.5rem; }
-  .img--overhaul-mobile {
-    display: block; }
-  .img--overhaul-desctop {
-    display: none; } }
+.price-tag--margin-right {
+  padding: 1.214rem 5.8rem 1.214rem 2.5rem; }
+
+.ellipsis {
+  display: none; }
 
 @media screen and (max-width: 1366px) {
   html {
@@ -625,7 +620,15 @@ img {
   .instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .team {
+    height: 140rem;
+    margin-top: -134rem; }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__col {
+    margin-bottom: 4.29rem; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -668,7 +671,46 @@ img {
     .hero__buttons {
       margin-top: 2.9rem; }
   .button--outline {
-    padding: 1.35rem 3.2rem; } }
+    padding: 1.35rem 3.2rem; }
+  .section-title {
+    font-size: 1.3rem;
+    letter-spacing: -0.09rem; }
+  .card__text {
+    margin-left: 0;
+    margin-top: -12.29rem;
+    max-width: 22.57rem; }
+  .card__list {
+    padding: 0 0 1rem 1.2rem; }
+  .card__item {
+    line-height: 1.9rem; }
+  .card__price-tag {
+    bottom: -1.05rem;
+    padding: 0.8rem 2.7rem; }
+  .types__col {
+    margin-bottom: 5.9rem; }
+  .types__section-title {
+    margin-bottom: 3.5rem; }
+  .img--overhaul-mobile {
+    display: block; }
+  .img--overhaul-desctop {
+    display: none; }
+  .design {
+    background: #131313; }
+    .design__section-title {
+      color: #ffffff;
+      margin-bottom: 1.3rem; }
+    .design__title-text {
+      max-width: 24.4rem;
+      width: 87%;
+      color: #ffffff;
+      font-size: 1.4rem;
+      line-height: 1.73rem; }
+  .price-tag--margin-right {
+    padding: 0.6rem 3.9rem; }
+  .item--none {
+    display: none; }
+  .ellipsis {
+    display: inline-block; } }
 
 @media screen and (max-height: 570px) {
   .hero__scroll-down {
