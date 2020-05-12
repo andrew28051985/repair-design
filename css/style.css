@@ -351,7 +351,8 @@ body {
   font-size: 1rem; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  overflow: cover; }
 
 .section {
   margin-bottom: 4rem; }
@@ -366,6 +367,8 @@ img {
     font-weight: normal;
     line-height: 1.75rem;
     letter-spacing: -0.045rem; }
+    .section-title__types {
+      margin-top: 1.8rem; }
     .section-title__img {
       display: flex;
       justify-content: center;
@@ -534,6 +537,8 @@ img {
 
 .types {
   margin-bottom: 8.56rem; }
+  .types__section-title {
+    margin-bottom: 2rem; }
 
 .row {
   display: flex;
@@ -541,7 +546,7 @@ img {
   align-items: flex-start; }
 
 .col {
-  flex-basis: 32%; }
+  flex-basis: 31%; }
 
 .img--overhaul-mobile {
   display: none; }
@@ -590,10 +595,16 @@ img {
 .design__title-text {
   font-family: 'Futura Book', sans-serif;
   max-width: 52.93rem;
-  width: 80%; }
+  width: 80%;
+  font-size: 1.32rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.05rem; }
+
+.design__section-title {
+  margin-bottom: 2rem; }
 
 .price-tag--margin-right {
-  padding: 1.214rem 5.8rem 1.214rem 2.5rem; }
+  padding: 1.2rem 5.5rem 1.2rem 2.39rem; }
 
 .ellipsis {
   display: none; }
@@ -697,14 +708,14 @@ img {
   .design {
     background: #131313; }
     .design__section-title {
-      color: #ffffff;
-      margin-bottom: 1.3rem; }
+      color: #ffffff; }
     .design__title-text {
-      max-width: 24.4rem;
-      width: 87%;
+      max-width: 25.4rem;
+      width: 100%;
       color: #ffffff;
-      font-size: 1.4rem;
-      line-height: 1.73rem; }
+      font-size: 1.19rem;
+      line-height: 1.79rem;
+      letter-spacing: 0.02rem; }
   .price-tag--margin-right {
     padding: 0.6rem 3.9rem; }
   .item--none {
