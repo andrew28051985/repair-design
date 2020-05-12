@@ -533,42 +533,45 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 576px) {
+  .container {
+    width: 89%; }
   .menu__logo {
-    letter-spacing: 0.089em;
-    font-size: 0.82rem;
-    line-height: 1.142rem; }
+    letter-spacing: 0.039rem;
+    font-size: 1rem;
+    line-height: 1.16rem; }
   .contacts__button {
     display: none; }
   .contacts__phone {
     color: #ffffff;
     text-decoration: none;
-    letter-spacing: -0.04rem;
-    margin: 0; }
+    letter-spacing: 0.01rem;
+    margin: 0;
+    font-size: 1rem; }
   .hero {
-    display: block;
-    padding-top: 10.79rem; }
+    padding-top: 0.3rem; }
+    .hero__content {
+      margin: auto;
+      max-width: 28.33rem; }
     .hero__scroll-down {
       display: none; }
     .hero__title {
       font-size: 1.916rem;
-      letter-spacing: -0.142rem;
-      line-height: 2.4rem;
-      margin-bottom: 0.8rem; }
+      line-height: 2.5rem;
+      margin-bottom: 1.09rem; }
     .hero__text {
       margin: 0;
-      letter-spacing: -0.066rem;
-      line-height: 1.89rem;
+      line-height: 2rem;
       font-size: 1.5rem; }
-    .hero__content {
-      max-width: 26.83rem;
-      margin: auto; }
     .hero__button {
       width: 100%;
       margin-right: 0;
-      margin-bottom: 2.05rem;
-      letter-spacing: 0.0098rem; }
+      margin-bottom: 2.3rem;
+      line-height: 1.4rem;
+      font-size: 1.1rem; }
     .hero__buttons {
-      margin-top: 2.5rem; } }
+      margin-top: 2.9rem; }
+  .button--outline {
+    padding: 1.35rem 3.2rem; } }
 
 @media screen and (max-height: 570px) {
   .hero__scroll-down {
