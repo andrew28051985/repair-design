@@ -351,6 +351,7 @@ body {
   font-size: 1rem; }
 
 .section-title {
+  margin-bottom: 7.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,6 +510,9 @@ body {
 
 .button--outline {
   padding: 1.2rem 3.2rem; }
+
+.row {
+  display: flex; }
 
 @media screen and (max-width: 1366px) {
   html {
