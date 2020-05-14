@@ -340,6 +340,7 @@ template {
     background-color: transparent;
     border: 1px solid #ffffff; }
   .button__scroll-up {
+    outline: none;
     display: none;
     opacity: 0.4;
     filter: alpha(opacity=50);
@@ -697,7 +698,8 @@ img {
     background: transparent url("../img/modal/btnClose.svg") no-repeat center;
     border: none;
     margin: 0.857rem;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
