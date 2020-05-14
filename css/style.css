@@ -339,6 +339,19 @@ template {
   .button--outline {
     background-color: transparent;
     border: 1px solid #ffffff; }
+  .button__scroll-up {
+    display: none;
+    opacity: 0.4;
+    filter: alpha(opacity=50);
+    position: fixed;
+    right: 1.43rem;
+    bottom: 7.142rem;
+    transition: 0.7s; }
+    .button__scroll-up:hover {
+      cursor: pointer;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      transition: 0.3s; }
 
 .label {
   font-size: 1.071rem; }

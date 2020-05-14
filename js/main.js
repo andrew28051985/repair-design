@@ -32,7 +32,8 @@ $(document).ready(function(){
   var modal = $('.modal'),
       clsModalOnClick = $('.modal__dialog'),
       btnModal = $('[data-toggle=modal]'),
-      btnClose = $('.modal__close');
+      btnClose = $('.modal__close'),
+      btnScrolUp = $('.button__scroll-up');
 
   btnModal.on('click', function(){
     modal.toggleClass('modal--visible');
@@ -53,5 +54,20 @@ $(document).ready(function(){
       modal.removeClass('modal--visible');
     }    
   });
+
+  $(document).scroll (function() {
+    if ($(this).scrollTop () > 500) {
+      btnScrolUp.fadeIn();
+    } else {
+      btnScrolUp.fadeOut();}
+  });
+
+  btnScrolUp.on('click', function() {
+    $('body, html').animate({
+      scrollTop: 0
+      }, 800);
+      return false;
+  });
+
 
 });
