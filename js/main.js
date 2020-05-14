@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+/*document.addEventListener("DOMContentLoaded", function(event) { 
   const modal = document.querySelector('.modal');
   const btnModal = document.querySelectorAll('[data-toggle=modal]');
   const btnClose = document.querySelector('.modal__close');
@@ -25,5 +25,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
       modal.classList.remove('modal--visible');
     }
 });
+
+});*/ /* далее код будет на JQuery */
+$(document).ready(function(){
+
+  var modal = $('.modal'),
+      clsModalOnClick = $('.modal__dialog'),
+      btnModal = $('[data-toggle=modal]'),
+      btnClose = $('.modal__close');
+
+  btnModal.on('click', function(){
+    modal.toggleClass('modal--visible');
+  });   
+
+  btnClose.on('click', function(){
+    modal.toggleClass('modal--visible');
+  });
+
+  $(document).keydown(function (e) { 
+    if (e.which == 27) {
+      modal.removeClass('modal--visible');
+    }
+  });
+
+  $(document).on('click', function(e) {
+    if ($(e.target).hasClass('modal')) {
+      modal.removeClass('modal--visible');
+    }    
+  });
 
 });
