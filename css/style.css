@@ -499,7 +499,7 @@ img {
   align-items: center;
   padding-top: 7.857rem;
   background: #131313 url("../img/bg-hero.jpg") no-repeat center/cover;
-  height: 100vh;
+  min-height: 100vh;
   color: #ffffff; }
   .hero::before {
     content: "";
@@ -509,6 +509,15 @@ img {
     position: absolute;
     left: 0;
     top: 0; }
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3.464rem;
+    background: #131313; }
   .hero__title {
     font-family: 'Yeseva One', cursive;
     font-size: 2.857rem;
@@ -536,13 +545,14 @@ img {
     left: 0; }
   .hero__scroll-down {
     position: absolute;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.64rem;
+    min-height: 6.928rem;
     background-color: #131313;
     color: #ffffff;
     font-size: 0.857rem;
@@ -736,9 +746,7 @@ img {
   .nav__item {
     margin-right: 0.857rem; }
   .hero__scroll-down {
-    font-size: 0.857rem;
-    min-width: 180px;
-    min-height: 60px; }
+    font-size: 1rem; }
   .section-title {
     font-size: 1.3rem; } }
 
@@ -747,6 +755,10 @@ img {
     display: none; }
   .instagram {
     display: none; }
+  .hero__scroll-down {
+    font-size: 0.857rem;
+    min-width: 12.857rem;
+    min-height: 3.464rem; }
   .hero__content {
     margin-left: 0; }
   .team {
@@ -777,6 +789,8 @@ img {
     display: block;
     padding-top: 11.7rem;
     height: 100%; }
+    .hero::after {
+      display: none; }
     .hero__content {
       margin: auto;
       max-width: 28.33rem; }
@@ -841,6 +855,8 @@ img {
     display: inline-block; } }
 
 @media screen and (max-height: 570px) {
+  .hero::after {
+    display: none; }
   .hero__scroll-down {
     display: none; } }
 

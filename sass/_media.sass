@@ -8,9 +8,7 @@
     margin-right: 0.857rem  
   .hero
     &__scroll-down
-      font-size: 0.857rem  
-      min-width: 180px
-      min-height: 60px
+      font-size: 1rem  
   .section
     &-title
         font-size: 1.3rem      
@@ -20,6 +18,10 @@
   .instagram
     display: none  
   .hero
+    &__scroll-down
+      font-size: 0.857rem  
+      min-width: 12.857rem
+      min-height: 3.464rem
     &__content
       margin-left: 0  
   .team
@@ -52,6 +54,8 @@
     display: block
     padding-top: 11.7rem  
     height: 100%
+    &::after
+      display: none
     &__content
       margin: auto
       max-width: 28.33rem
@@ -124,6 +128,8 @@
             
 @media screen and (max-height: 570px)      
   .hero
+    &::after
+      display: none
     &__scroll-down
       display: none
 @media screen and (max-height: 520px) 
