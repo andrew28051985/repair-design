@@ -323,6 +323,17 @@ template {
   width: 85%;
   margin: auto; }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.col-30 {
+  flex-basis: 31%; }
+
+.col-50 {
+  width: 50%; }
+
 .button {
   padding: 0.785rem 1.428rem;
   border: none;
@@ -412,17 +423,36 @@ img {
 
 .section {
   margin-bottom: 4rem; }
+  .section--dark {
+    background: #131313;
+    color: #ffffff; }
   .section-title {
     margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
     font-weight: normal;
     line-height: 1.75rem;
     letter-spacing: -0.045rem; }
+    .section-title--left {
+      display: block;
+      text-align: left; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase; }
+      .section-title__heading--primary {
+        color: #e3b873; }
+    .section-title__word {
+      display: flex;
+      align-items: center;
+      line-height: 138.6%; }
+      .section-title__word::after {
+        content: "";
+        width: 6.7rem;
+        height: 2px;
+        background: #e3b873;
+        margin-left: 2.35rem; }
     .section-title__types {
       margin-top: 1.8rem; }
     .section-title__img {
@@ -436,14 +466,19 @@ img {
         border-radius: 30px;
         background: #e3b873;
         margin: 0 10px; }
-
-.title-text {
-  font-weight: normal;
-  font-size: 1.17rem;
-  line-height: 1.93rem;
-  text-align: center;
-  color: #363636;
-  text-transform: none; }
+    .section-title__text {
+      font-weight: normal;
+      font-size: 1.17rem;
+      line-height: 1.93rem;
+      text-align: center;
+      color: #363636;
+      text-transform: none; }
+    .section-title__text-p {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      font-weight: normal;
+      max-width: 31.57rem;
+      letter-spacing: 0.001rem; }
 
 .header {
   position: fixed;
@@ -596,18 +631,59 @@ img {
 .button--outline {
   padding: 1.2rem 3.2rem; }
 
+.projects {
+  padding-top: 7rem;
+  padding-bottom: 4rem; }
+  .projects__section-title {
+    font-size: 1.93rem;
+    line-height: 2.64rem;
+    letter-spacing: -0.07em;
+    font-weight: normal; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: #e3b873;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background: #ffffff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  background: url("../img/arrowBack.svg") no-repeat center;
+  left: 0; }
+
+.swiper-button-next {
+  background: url("../img/arrowFwd.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
+
 .types {
   margin-bottom: 8.56rem; }
   .types__section-title {
     margin-bottom: 2rem; }
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
-
-.col {
-  flex-basis: 31%; }
 
 .img--overhaul-mobile {
   display: none; }

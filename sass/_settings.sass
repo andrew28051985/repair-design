@@ -10,17 +10,36 @@ img
   overflow: cover
 .section
   margin-bottom: 4rem 
+  &--dark
+    background: $dark
+    color: $light
   &-title
     margin-bottom: 2.5rem
     display: flex
     justify-content: center
     align-items: center
-    flex-direction: column
-    font-family: 'Yeseva One', cursive
-    text-transform: uppercase
+    flex-direction: column    
     font-weight: normal
     line-height: 1.75rem
     letter-spacing: -0.045rem
+    &--left
+      display: block
+      text-align: left      
+    &__heading
+      font-family: 'Yeseva One', cursive
+      text-transform: uppercase
+      &--primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      line-height: 138.6%   
+      &::after
+        content: ""
+        width: 6.7rem
+        height: 2px
+        background: $primary
+        margin-left: 2.35rem
     &__types
       margin-top: 1.8rem
     &__img 
@@ -34,11 +53,17 @@ img
         border-radius: 30px
         background: $primary
         margin: 0 10px
-.title-text
-  font-weight: normal
-  font-size: 1.17rem
-  line-height: 1.93rem
-  text-align: center
-  color: $dark-second
-  text-transform: none
+    &__text
+      font-weight: normal
+      font-size: 1.17rem
+      line-height: 1.93rem
+      text-align: center
+      color: $dark-second
+      text-transform: none  
+    &__text-p
+      font-size: 1.28rem
+      line-height: 2.07rem  
+      font-weight: normal 
+      max-width: 31.57rem 
+      letter-spacing: 0.001rem
         
