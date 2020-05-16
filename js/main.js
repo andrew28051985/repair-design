@@ -37,6 +37,8 @@ $(document).ready(function(){
       btnModal = $('[data-toggle=modal]'),
       btnClose = $('.modal__close'),
       btnScrolUp = $('.button__scroll-up');
+      btnScrollDown = $('.hero__scroll-down');
+      btnScrollUpMain = $('.logo__link');
 
   btnModal.on('click', function(){
     modal.toggleClass('modal--visible');
@@ -70,6 +72,20 @@ $(document).ready(function(){
       scrollTop: 0
       }, 1000);
       return false;
+  });
+
+  btnScrollUpMain.on('click', function() {
+    $('body, html').animate({
+      scrollTop: 0
+      }, 1000);
+      return false;
+  });
+
+  btnScrollDown.on('click', function(){
+    $('body, html').animate({
+      scrollTop: 620
+    }, 1000);
+    return false; 
   });
 
   var mySwiper = new Swiper ('.swiper-container', {
