@@ -18,12 +18,28 @@
   .instagram
     display: none  
   .hero
+    &::after
+      display: none
     &__scroll-down
       font-size: 0.857rem  
       min-width: 12.857rem
       min-height: 3.464rem
+      bottom: -1px
     &__content
       margin-left: 0  
+  .section
+    &-title
+      &__word
+        &::after
+          display: none      
+  .projects
+    padding: 4rem 0
+    &__swiper
+      &-container
+        margin-bottom: 2.5rem 
+  .swiper
+    &-wrapper
+      margin-bottom: 2.5rem                 
   .team
     height: 140rem
     margin-top: -134rem        
@@ -34,8 +50,21 @@
     &__col
       margin-bottom: 4.29rem   
   .design
+    background: $dark
+    &__section-title, &__title-text
+      color: $light 
     &__col
-      margin-bottom: 4.29rem     
+      margin-bottom: 4.29rem    
+    &::after
+      display: none  
+@media screen and (max-width: 772px)
+  .projects
+    &__col-50
+      max-width: 100%     
+    &__swiper
+      &-container
+        &--photo
+          max-width: 31rem  
 @media screen and (max-width: 576px)
   .container
     width: 89%
@@ -56,9 +85,7 @@
   .hero
     display: block
     padding-top: 11.7rem  
-    height: 100%
-    &::after
-      display: none
+    height: 100%    
     &__content
       margin: auto
       max-width: 28.33rem
@@ -86,6 +113,7 @@
   .section-title
     font-size: 1.3rem  
     letter-spacing: -0.09rem
+    
   .card
     &__text
       margin-left: 0  
@@ -111,14 +139,10 @@
         display: block
       &-desctop
         display: none       
-  .design
-    background: $dark
-    &__section-title
-      color: $light  
+  .design     
     &__title-text
       max-width: 25.4rem
       width: 100%    
-      color: $light  
       font-size: 1.19rem
       line-height: 1.79rem
       letter-spacing: 0.02rem
@@ -127,13 +151,15 @@
   .item--none
     display: none  
   .ellipsis
-    display: inline-block      
-            
+    display: inline-block    
+
+@media screen and (max-height: 630px)    
+  .hero
+    &__scroll-down
+      display: none        
 @media screen and (max-height: 570px)      
   .hero
     &::after
-      display: none
-    &__scroll-down
       display: none
 @media screen and (max-height: 520px) 
   .hero

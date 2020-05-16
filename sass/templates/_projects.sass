@@ -7,14 +7,22 @@
       line-height: 2.64rem 
       letter-spacing: -0.07em
       font-weight: normal
+  &__swiper
+    &-container
+      margin-left: 0   
+      &--text
+        max-width: 25rem 
+      &--photo
+        max-width: 100%  
 .swiper
+  &-wrapper
+    margin-bottom: 3.64rem
   &-slide
     display: flex
     flex-wrap: wrap
     &__text
       flex-basis: 50%
-      margin-bottom: 2.42rem
-      padding-bottom: 2rem
+      margin-bottom: 1.42rem
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
@@ -22,6 +30,8 @@
       text-transform: uppercase
       color: $primary
       margin-bottom: 0.64rem
+    &__value
+      display: block  
   &-pagination
     &-bullet
       background: rgba($light, 0.3)

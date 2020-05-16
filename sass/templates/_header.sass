@@ -19,6 +19,9 @@
 .logo
   color: $primary
   text-transform: uppercase
+  &__link
+    text-decoration: none
+    color: $primary
 .nav
   &__item
     font-weight: normal
@@ -28,6 +31,8 @@
     text-transform: uppercase
     margin-right: 2.668rem
     transition: color 0.2s
+    &--active
+      color: $primary
     &:hover
       color: $primary
 .phone
