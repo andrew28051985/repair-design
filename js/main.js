@@ -38,7 +38,8 @@ $(document).ready(function(){
       btnClose = $('.modal__close'),
       btnScrolUp = $('.button__scroll-up');
       btnScrollDown = $('.hero__scroll-down');
-      btnScrollUpMain = $('.logo__link');
+      btnScrollUpLogo = $('.logo__link');
+      btnScrollUpMain = $('.nav__item--main');
 
   btnModal.on('click', function(){
     modal.toggleClass('modal--visible');
@@ -74,6 +75,13 @@ $(document).ready(function(){
       return false;
   });
 
+  btnScrollUpLogo.on('click', function() {
+    $('body, html').animate({
+      scrollTop: 0
+      }, 1000);
+      return false;
+  });
+
   btnScrollUpMain.on('click', function() {
     $('body, html').animate({
       scrollTop: 0
@@ -83,7 +91,7 @@ $(document).ready(function(){
 
   btnScrollDown.on('click', function(){
     $('body, html').animate({
-      scrollTop: 620
+      scrollTop: 680
     }, 1000);
     return false; 
   });
@@ -106,5 +114,12 @@ $(document).ready(function(){
 
   next.css('left', prev.width() + 20 + bullets.width() + 22);
   bullets.css('left', prev.width() + 25);
+
+  var nextSteps = $('.steps__swiper-button-next');
+  var prevSteps = $('.steps__swiper-button-prev');
+  var bulletsSteps =$('.steps__swiper-pagination');
+
+  nextSteps.css('left', prevSteps.width() + 20 + bulletsSteps.width() + 22);
+  bulletsSteps.css('left', prevSteps.width() + 25);
 
 });
