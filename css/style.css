@@ -1008,6 +1008,18 @@ img {
   .section-title {
     font-size: 1.3rem;
     letter-spacing: -0.09rem; }
+    .section-title__text-p {
+      font-size: 1.2rem;
+      line-height: 158.48%;
+      font-weight: normal;
+      max-width: 25.57rem;
+      letter-spacing: -0.01rem;
+      margin-bottom: 3.45rem;
+      padding-top: 0.2rem; }
+  .projects__section-title {
+    letter-spacing: -0.2rem; }
+  .projects__col-40 {
+    margin-right: 4rem; }
   .card__text {
     margin-left: 0;
     margin-top: -13.5rem;
@@ -1038,6 +1050,8 @@ img {
     display: block; }
   .img--overhaul-desctop {
     display: none; }
+  .design__col--mobile {
+    margin-bottom: 6rem; }
   .design__title-text {
     max-width: 25.4rem;
     width: 100%;
