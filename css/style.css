@@ -332,7 +332,8 @@ template {
   flex-basis: 31%; }
 
 .col-35 {
-  max-width: 24.071rem; }
+  max-width: 24.071rem;
+  width: 35%; }
 
 .col-40 {
   max-width: 40%; }
@@ -342,7 +343,8 @@ template {
   max-width: 50%; }
 
 .col-60 {
-  max-width: 48.5rem; }
+  max-width: 48.5rem;
+  width: 60%; }
 
 .button {
   padding: 0.785rem 1.428rem;
@@ -659,10 +661,6 @@ img {
 .button--outline {
   padding: 1.2rem 3.2rem; }
 
-img {
-  max-width: 107%;
-  width: 107%; }
-
 .projects {
   padding-top: 7rem;
   padding-bottom: 4rem; }
@@ -750,7 +748,7 @@ img {
 .card__text {
   position: relative;
   margin: 0 auto;
-  margin-top: -9.5rem;
+  margin-top: -9.1rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
   background: #ffffff;
   max-width: 23.57rem;
@@ -935,6 +933,8 @@ img {
     display: none; }
   .projects {
     padding: 4rem 0; }
+    .projects__col-40, .projects__col-60 {
+      max-width: 100%; }
     .projects__swiper-container {
       margin-bottom: 2.5rem; }
   .swiper-wrapper {
@@ -957,10 +957,11 @@ img {
       display: none; } }
 
 @media screen and (max-width: 772px) {
-  .projects__col-50 {
+  .projects__col-40, .projects__col-60 {
     max-width: 100%; }
   .projects__swiper-container--photo {
-    max-width: 31rem; } }
+    max-width: 31rem;
+    width: 100%; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -1009,15 +1010,26 @@ img {
     letter-spacing: -0.09rem; }
   .card__text {
     margin-left: 0;
-    margin-top: -12.29rem;
+    margin-top: -13.5rem;
+    padding-left: 3rem;
     max-width: 22.57rem; }
+    .card__text--mobile-2 {
+      margin-top: -12.2rem;
+      padding-left: 2.5rem; }
   .card__list {
     padding: 0 0 1rem 1.2rem; }
   .card__item {
     line-height: 1.9rem; }
   .card__price-tag {
-    bottom: -1.05rem;
+    bottom: -0.9rem;
+    left: 0.5rem;
     padding: 0.8rem 2.7rem; }
+    .card__price-tag--mobile-2 {
+      bottom: -1rem;
+      left: 0rem;
+      padding: 0.8rem 2.44rem; }
+    .card__price-tag--mobile-3 {
+      padding: 0.8rem 1.89em; }
   .types__col {
     margin-bottom: 5.9rem; }
   .types__section-title {
