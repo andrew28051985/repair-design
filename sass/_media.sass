@@ -34,6 +34,7 @@
           display: none      
   .projects
     padding: 4rem 0
+    margin-bottom: 0
     &__col-40, &__col-60
       max-width: 100%  
     &__swiper
@@ -51,6 +52,15 @@
   .types
     &__col
       margin-bottom: 4.29rem   
+  .control
+    background: $dark
+    &__section
+      &-title
+        color: $light
+        margin-top: 0
+    &__text
+      color: $light   
+      
   .design
     background: $dark
     &__section-title, &__title-text
@@ -71,6 +81,27 @@
         &--photo
           max-width: 31rem  
           width: 100%
+  .control
+    padding-bottom: 4rem
+    &__video
+      background-size: 100%
+    &__form
+      position: relative
+      max-width: 38rem
+      flex-direction: column
+    &__input-group
+      flex-basis: 8.5rem  
+    &__button
+      order: 5
+      position: absolute
+      left: 0
+      bottom: -5.5rem
+      padding: 1.2rem 16.6rem
+    &__policy
+      margin-top: -2rem       
+      justify-content: flex-start
+      padding: 0
+      margin-left: -0.5rem       
 @media screen and (max-width: 576px)
   .container
     width: 89%
@@ -153,7 +184,34 @@
         &--left
           padding-left: 0.8rem
       &__value 
-        letter-spacing: 0.08rem   
+        letter-spacing: 0.08rem 
+  .control
+    &__button
+      padding: 1.2rem 6.6rem
+    &__video
+      background: url('../img/control/photo-1-mobi.jpg')
+      max-width: 29.28rem
+      width: 28.2rem
+      min-height: 14.78rem
+      height: 17rem  
+      margin-bottom: 2.5rem
+    &__text
+      font-size: 1.2rem
+      line-height: 168.8%
+      max-width: 100%    
+      letter-spacing: -0.02rem
+      margin-bottom: 2.6rem  
+      &::before 
+        width: 4.5rem 
+        margin-bottom: 1rem
+    &__section-title
+      margin-bottom: 3.5rem
+      &-heading
+        margin-bottom: 1.85rem    
+  .video
+    &__play
+      width: 5.45rem
+      height: 5.45rem    
   .card
     &__text
       margin-left: 0  

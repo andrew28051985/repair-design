@@ -36,10 +36,13 @@ $(document).ready(function(){
       clsModalOnClick = $('.modal__dialog'),
       btnModal = $('[data-toggle=modal]'),
       btnClose = $('.modal__close'),
-      btnScrolUp = $('.button__scroll-up');
-      btnScrollDown = $('.hero__scroll-down');
-      btnScrollUpLogo = $('.logo__link');
-      btnScrollUpMain = $('.nav__item--main');
+      btnScrolUp = $('.button__scroll-up'),
+      btnScrollDown = $('.hero__scroll-down'),
+      btnScrollUpLogo = $('.logo__link'),
+      btnScrollUpMain = $('.nav__item--main'),
+      label = $('.label'),
+      input = $('.input');
+      policy = $('.control__policy')
 
   btnModal.on('click', function(){
     modal.toggleClass('modal--visible');
@@ -61,10 +64,24 @@ $(document).ready(function(){
     }    
   });
 
+  $(window).resize (function() {
+    if ($(this).width() < 993)   {    
+      input.removeClass('input--dark');
+      label.removeClass('label--dark');
+      policy.addClass('policy--light');
+      label.addClass('label--light');
+     } else { 
+      input.addClass('input--dark');
+      label.addClass('label--dark');
+      label.removeClass('label--light');
+      policy.removeClass('policy--light');
+     }
+  });
+
   $(document).scroll (function() {
     if ($(this).scrollTop () > 500) {
       btnScrolUp.fadeIn();
-    } else {
+    } else{
       btnScrolUp.fadeOut();}
   });
 

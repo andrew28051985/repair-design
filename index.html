@@ -243,14 +243,43 @@
 
     <section class="section control">
       <div class="container">
-        <div class="section-title">
-          <h2 class="section-title__heading">Онлайн контроль</h2>
+        <div class="section-title section-title--light control__section-title ">
+          <h2 class="section-title__heading control__section-title-heading">Онлайн контроль</h2>
           <div class="section-title__img">
             <img src="img/video_camera.svg" alt="icon-title">
           </div>
           <!-- /.section-title__img -->
         </div>
         <!-- /.section-title -->
+        <div class="control__video video">
+          <img src="img/control/control-icon-video.svg" alt="icon vibeo play" class="video__play">
+        </div>
+        <!-- /.control__video video -->
+        <p class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы&nbsp;получить ссылку на трансляцию.
+        </p>
+        <form action="#" class="form control__form">
+          <div class="control__input-group">
+            <label for="user-name" class="label control__label form__label label--dark">Имя</label>
+            <input type="text" class="input input--dark form__input control__input" id="user-name" placeholder="Как вас зовут:">
+          </div>
+          <!-- /.input-group -->
+          <div class="control__input-group">
+            <label for="user-phone" class="label control__label form__label label--dark">Телефон</label>
+            <input type="tel" class="input input--dark form__input control__input" id="user-phone" placeholder="Ваш номер телефона:"> 
+          </div>
+          <!-- /.input-group -->            
+          <button class="button control__button button--primary">
+           Отправить
+          </button> 
+          <!-- /.button control__button button--primary -->
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__policy">Я соглашаюсь с обработкой данных</label>
+          </div>
+          <!-- /.policy -->
+        </form>
+        <!-- /.form modal__form -->
       </div>
       <!-- /.container -->
     </section>
