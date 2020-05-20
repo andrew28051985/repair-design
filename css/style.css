@@ -440,6 +440,9 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.643rem; }
+  .policy__label--center {
+    justify-content: center;
+    font-size: 1.142rem; }
 
 *, *:after, *:before {
   box-sizing: border-box; }
@@ -938,6 +941,51 @@ img {
     text-transform: none;
     font-style: normal;
     font-weight: normal; }
+
+.footer {
+  background: #131313 url("../img/footer/footer-bg.png") no-repeat center/cover;
+  margin-bottom: 0;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-top: -4rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
