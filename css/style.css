@@ -1040,7 +1040,8 @@ img {
   .types__col {
     margin-bottom: 4.29rem; }
   .control {
-    background: #131313; }
+    background: #131313;
+    padding-bottom: 5rem; }
     .control__section-title {
       color: #ffffff;
       margin-top: 0; }
