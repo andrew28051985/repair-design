@@ -47,6 +47,8 @@ $(document).ready(function(){
     modal.toggleClass('modal--visible');
   });   
 
+  new WOW().init();
+
   btnClose.on('click', function(){
     modal.toggleClass('modal--visible');
   });
