@@ -39,8 +39,8 @@ $(document).ready(function(){
       btnScrolUp = $('.button__scroll-up'),
       btnScrollUpLogo = $('.logo__link'),
       btnScrollUpMain = $('.nav__item--main'),
-      label = $('.label'),
-      input = $('.input');
+      label = $('.control__label'),
+      input = $('.control__input');
       policy = $('.control__policy')
 
   btnModal.on('click', function(){
@@ -153,10 +153,118 @@ $(document).ready(function(){
       $('.section-title__types').addClass("apperBlack");
       typesFlag = true;
     }
-    if (($(this).scrollTop() > 2500) && (designFlag == false)){  
+    if (($(this).scrollTop() > 2500) && (($(this).width() > 993) ) && (designFlag == false)){  
       $('.section-title__design').addClass("apperBlack");
       typesFlag = true;
+    } 
+  });
+
+  //валидация форм
+
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {      
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },         
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userPhone: {
+        required: true,
+        tel: true
+      }
+    },
+
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть менее 2 букв",
+        maxlength: "Имя не должно быть более 15 букв"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный Email вида name@domain.com"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        tel: "Ваш номер должен иметь вид +7 (000) 000-00-00"
+      }
     }
   });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {      
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      }, 
+      userPhone: {
+        required: true,
+        tel: true
+      }
+    },
+
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть менее 2 букв",
+        maxlength: "Имя не должно быть более 15 букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        tel: "Ваш номер должен иметь вид +7 (000) 000-00-00"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {      
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },         
+      userQuestion: {
+        required: true,
+        minlength: 2,
+        maxlength: 25 
+      },
+      userPhone: {
+        required: true,
+        tel: true
+      }
+    },
+
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть менее 2 букв",
+        maxlength: "Имя не должно быть более 15 букв"
+      },
+      userQuestion: {
+        required: "Заполните поле",
+        minlength: "Вопрос должен быть более 2-х букв",
+        maxlength: "Вопрос не более 25 символов"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        tel: "Ваш номер должен иметь вид +7 (000) 000-00-00"
+      }
+    }
+  });
+
+  //маска телефона
+
+  $('[type=tel]').mask("+7 (000) 000-00-00", {placeholder: "+7(___) ___-__-__"});
 
 });

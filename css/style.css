@@ -444,6 +444,13 @@ template {
     justify-content: center;
     font-size: 1.142rem; }
 
+.invalid {
+  color: tomato;
+  padding-top: 0.5rem; }
+
+.input.invalid {
+  border-bottom: 1px solid tomato; }
+
 *, *:after, *:before {
   box-sizing: border-box; }
 
@@ -968,24 +975,29 @@ img {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input {
-    padding-top: 0.3rem; }
+    padding-top: 0.3rem;
+    padding-left: 0; }
     .footer__input-group {
       display: flex;
       flex-direction: column;
-      flex-basis: 45%;
+      flex-basis: 44.5%;
       margin-bottom: 3.2rem; }
       .footer__input-group--full-width {
         flex-basis: 100%;
         margin-bottom: 2rem; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 3.6rem; }
+    margin-bottom: 3.6rem;
+    margin-right: 1.7rem; }
   .footer__button {
     margin: auto;
-    padding: 1.285rem 4.785rem; }
+    padding: 1rem 4.1rem;
+    font-weight: 500;
+    line-height: 1.86rem;
+    letter-spacing: 0.1rem; }
   .footer__menu {
     background: #131313;
-    padding: 4.285rem 0; }
+    padding: 3.5rem 0; }
 
 .modal {
   opacity: 0;
@@ -1034,8 +1046,11 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.4rem;
     padding-left: 0; }
+    .modal__input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.4rem; }
     .modal__input:last-of-type {
       margin-bottom: -0.2rem; }
   .modal__policy {
@@ -1203,9 +1218,6 @@ img {
       margin-bottom: 2.5rem; }
   .swiper-wrapper {
     margin-bottom: 2.5rem; }
-  .team {
-    height: 140rem;
-    margin-top: -134rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -1433,7 +1445,39 @@ img {
   .item--none {
     display: none; }
   .ellipsis {
-    display: inline-block; } }
+    display: inline-block; }
+  .footer {
+    background: #131313; }
+    .footer__title {
+      font-size: 1.6rem;
+      letter-spacing: 0.05rem;
+      margin-bottom: 4.6rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+      .footer__input-group {
+        flex-basis: 100%;
+        margin-bottom: 5.2rem; }
+        .footer__input-group--full-width {
+          margin-bottom: 0.6rem; }
+    .footer__button {
+      margin: 0;
+      flex-basis: 100%;
+      padding: 1.2rem 0;
+      line-height: 1.9rem;
+      letter-spacing: 0.15rem; }
+    .footer__menu {
+      display: none; }
+    .footer__wrap {
+      background: #131313;
+      margin-bottom: 0;
+      padding: 0; }
+    .footer__policy {
+      margin-bottom: 5.7rem;
+      margin-right: 0; }
+  .policy__label--center {
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    letter-spacing: 0.11rem; } }
 
 @media screen and (max-width: 370px) {
   .control__video {

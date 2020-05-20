@@ -43,9 +43,7 @@
   .swiper
     &-wrapper
       margin-bottom: 2.5rem                 
-  .team
-    height: 140rem
-    margin-top: -134rem        
+        
   .row
     flex-direction: column
     align-items: center    
@@ -298,17 +296,51 @@
   .item--none
     display: none  
   .ellipsis
-    display: inline-block    
+    display: inline-block 
+
+  .footer
+    background: $dark
+    &__title
+      font-size: 1.6rem
+      letter-spacing: 0.05rem
+      margin-bottom: 4.6rem
+    &__input
+      font-size: 1.5rem
+      &-group
+        flex-basis: 100%
+        margin-bottom: 5.2rem
+        &--full-width
+          margin-bottom: 0.6rem
+    &__button
+      margin: 0
+      flex-basis: 100%
+      padding: 1.2rem 0
+      line-height: 1.9rem
+      letter-spacing: 0.15rem
+    &__menu
+      display: none
+    &__wrap
+      background: $dark
+      margin-bottom: 0  
+      padding: 0    
+    &__policy
+      margin-bottom: 5.7rem
+      margin-right: 0 
+  .policy
+    &__label--center
+      justify-content: flex-start   
+      font-size: 1.1rem
+      letter-spacing: 0.11rem   
 
 @media screen and (max-width: 370px)    
-    .control
-      &__video
-        max-width: 23.28rem
-        width: 28.2rem
-        min-height: 12.78rem
-        height: 15rem  
-      &__button
-        padding: 1.5rem 36%
+  .control
+    &__video
+      max-width: 23.28rem
+      width: 28.2rem
+      min-height: 12.78rem
+      height: 15rem  
+    &__button
+      padding: 1.5rem 36%
 
 @media screen and (max-height: 630px)    
   .hero
