@@ -1131,6 +1131,8 @@ img {
   .section-title {
     font-size: 1.3rem;
     letter-spacing: -0.09rem; }
+    .section-title__types {
+      margin-top: 3rem; }
     .section-title__text-p {
       font-size: 1.2rem;
       line-height: 158.48%;
@@ -1139,17 +1141,22 @@ img {
       letter-spacing: -0.01rem;
       margin-bottom: 3.3rem;
       padding-top: 0.2rem; }
-  .projects__section-title {
-    letter-spacing: -0.2rem; }
-  .projects__col-40 {
-    margin-right: 0rem; }
-  .projects__col-60 {
-    margin: 0;
-    margin-right: 1px; }
-  .projects__swiper-slide--photo {
-    max-width: 28.28rem;
-    width: 100%;
-    height: 17rem; }
+    .section-title__design {
+      margin-top: 5rem;
+      margin-bottom: 1.4rem; }
+  .projects {
+    padding-bottom: 0.1rem; }
+    .projects__section-title {
+      letter-spacing: -0.2rem; }
+    .projects__col-40 {
+      margin-right: 0rem; }
+    .projects__col-60 {
+      margin: 0;
+      margin-right: 1px; }
+    .projects__swiper-slide--photo {
+      max-width: 28.28rem;
+      width: 100%;
+      height: 17rem; }
   .swiper-slide__heading {
     margin-bottom: 0.75rem;
     letter-spacing: -0.09rem; }
@@ -1159,36 +1166,55 @@ img {
       padding-left: 0.8rem; }
   .swiper-slide__value {
     letter-spacing: 0.08rem; }
-  .control__button {
-    padding: 1.2rem 6.6rem; }
-  .control__video {
-    background: url("../img/control/photo-1-mobi.jpg");
-    max-width: 29.28rem;
-    width: 28.2rem;
-    min-height: 14.78rem;
-    height: 17rem;
-    margin-bottom: 2.5rem; }
-  .control__text {
-    font-size: 1.2rem;
-    line-height: 168.8%;
-    max-width: 100%;
-    letter-spacing: -0.02rem;
-    margin-bottom: 2.6rem; }
-    .control__text::before {
-      width: 4.5rem;
-      margin-bottom: 1rem; }
-  .control__section-title {
-    margin-bottom: 3.5rem; }
-    .control__section-title-heading {
-      margin-bottom: 1.85rem; }
+  .control {
+    padding-bottom: 6.7rem; }
+    .control__button {
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      bottom: -8.9rem;
+      padding: 1.5rem 10.9rem; }
+    .control__video {
+      background: url("../img/control/photo-1-mobi.jpg");
+      max-width: 29.28rem;
+      width: 28.2rem;
+      min-height: 14.78rem;
+      height: 17rem;
+      margin-bottom: 2.5rem; }
+    .control__text {
+      font-size: 1.2rem;
+      line-height: 168.8%;
+      max-width: 100%;
+      letter-spacing: -0.02rem;
+      margin-bottom: 2.6rem; }
+      .control__text::before {
+        width: 4.5rem;
+        margin-bottom: 1.1rem; }
+    .control__section-title {
+      margin-bottom: 3.5rem; }
+      .control__section-title-heading {
+        margin-bottom: 1.85rem; }
+    .control__input {
+      padding-bottom: 0.6rem;
+      padding-top: 0.3rem;
+      font-size: 1.5rem; }
+      .control__input-group {
+        flex-basis: 9rem; }
+    .control__policy {
+      margin-left: -0.5rem;
+      font-size: 1.35rem;
+      margin-top: -1.8rem; }
   .video__play {
     width: 5.45rem;
     height: 5.45rem; }
   .card__text {
     margin-left: 0;
-    margin-top: -13.5rem;
-    padding-left: 3rem;
+    margin-top: -12rem;
+    padding-left: 2.5rem;
     max-width: 22.57rem; }
+    .card__text-design {
+      padding-top: 1.5rem;
+      padding-bottom: 2.7rem; }
     .card__text--mobile-2 {
       margin-top: -12.2rem;
       padding-left: 2.5rem; }
@@ -1198,36 +1224,52 @@ img {
     line-height: 1.9rem; }
   .card__price-tag {
     bottom: -0.9rem;
-    left: 0.5rem;
+    left: 0;
     padding: 0.8rem 2.7rem; }
+    .card__price-tag-design {
+      bottom: -1.6rem; }
     .card__price-tag--mobile-2 {
       bottom: -1rem;
       left: 0rem;
       padding: 0.8rem 2.44rem; }
     .card__price-tag--mobile-3 {
       padding: 0.8rem 1.89em; }
-  .types__col {
-    margin-bottom: 5.9rem; }
-  .types__section-title {
-    margin-bottom: 3.5rem; }
+  .types {
+    margin-bottom: 0; }
+    .types__col {
+      margin-bottom: 5.9rem; }
+    .types__section-title {
+      margin-bottom: 3.5rem; }
   .img--overhaul-mobile {
     display: block; }
   .img--overhaul-desctop {
     display: none; }
   .design__col--mobile {
-    margin-bottom: 6rem; }
+    margin-bottom: 6.7rem; }
   .design__title-text {
     max-width: 25.4rem;
     width: 100%;
     font-size: 1.19rem;
     line-height: 1.79rem;
-    letter-spacing: 0.02rem; }
+    letter-spacing: 0.02rem;
+    margin-top: 1.5rem; }
+  .design__card-title {
+    margin-bottom: 0.5rem; }
   .price-tag--margin-right {
-    padding: 0.6rem 3.9rem; }
+    padding: 0.7rem 3.8rem; }
   .item--none {
     display: none; }
   .ellipsis {
     display: inline-block; } }
+
+@media screen and (max-width: 370px) {
+  .control__video {
+    max-width: 23.28rem;
+    width: 28.2rem;
+    min-height: 12.78rem;
+    height: 15rem; }
+  .control__button {
+    padding: 1.5rem 36%; } }
 
 @media screen and (max-height: 630px) {
   .hero__scroll-down {
