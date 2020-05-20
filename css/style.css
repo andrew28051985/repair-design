@@ -615,7 +615,11 @@ img {
     font-size: 1.57rem;
     line-height: 30px;
     max-width: 35.714rem;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    -webkit-animation: apperwhite 2s 0.5s ease-in 1;
+    animation: apperwhite 2s 0.5s ease-in 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
   .hero__content {
     max-width: 47.857rem;
     position: relative;
@@ -657,7 +661,11 @@ img {
     font-size: 0.95rem;
     line-height: 1.0714rem; }
   .hero__buttons {
-    margin-top: 3.3rem; }
+    margin-top: 3.3rem;
+    -webkit-animation: leftDrive 1s 0.5s ease 1;
+    animation: leftDrive 1s 0.5s ease 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
 
 .instagram {
   background-color: #131313;
@@ -991,6 +999,122 @@ img {
     align-self: flex-end;
     padding: 1.2rem 3.3rem;
     margin: -0.9rem -0.2rem; }
+
+@-webkit-keyframes bounce {
+  from {
+    bottom: 2px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  25% {
+    bottom: 50px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  50% {
+    bottom: 2px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  75% {
+    bottom: 100px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    bottom: 2px; } }
+
+@keyframes bounce {
+  from {
+    bottom: 2px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  25% {
+    bottom: 50px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  50% {
+    bottom: 2px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  75% {
+    bottom: 100px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    bottom: 2px; } }
+
+@-webkit-keyframes apperblack {
+  from {
+    color: rgba(0, 0, 0, 0); }
+  25% {
+    color: rgba(0, 0, 0, 0.2); }
+  50% {
+    color: rgba(0, 0, 0, 0.5); }
+  75% {
+    color: rgba(0, 0, 0, 0.7); }
+  to {
+    color: black; } }
+
+@keyframes apperblack {
+  from {
+    color: rgba(0, 0, 0, 0); }
+  25% {
+    color: rgba(0, 0, 0, 0.2); }
+  50% {
+    color: rgba(0, 0, 0, 0.5); }
+  75% {
+    color: rgba(0, 0, 0, 0.7); }
+  to {
+    color: black; } }
+
+@-webkit-keyframes apperwhite {
+  from {
+    color: rgba(255, 255, 255, 0); }
+  25% {
+    color: rgba(255, 255, 255, 0.2); }
+  50% {
+    color: rgba(255, 255, 255, 0.5); }
+  75% {
+    color: rgba(255, 255, 255, 0.7); }
+  to {
+    color: white; } }
+
+@keyframes apperwhite {
+  from {
+    color: rgba(255, 255, 255, 0); }
+  25% {
+    color: rgba(255, 255, 255, 0.2); }
+  50% {
+    color: rgba(255, 255, 255, 0.5); }
+  75% {
+    color: rgba(255, 255, 255, 0.7); }
+  to {
+    color: white; } }
+
+@-webkit-keyframes leftDrive {
+  from {
+    margin-left: 500%; }
+  to {
+    margin-left: 0; } }
+
+@keyframes leftDrive {
+  from {
+    margin-left: 500%; }
+  to {
+    margin-left: 0; } }
+
+.apperwhite {
+  -webkit-animation: apperwhite 2s 0.5s ease-in 1;
+  animation: apperwhite 2s 0.5s ease-in 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.apperBlack {
+  -webkit-animation: apperblack 2s 0.5s ease-in 1;
+  animation: apperblack 2s 0.5s ease-in 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animBounce {
+  -webkit-animation: bounce 1.2s 4.3s ease-in-out 5;
+  animation: bounce 1.2s 4.3s ease-in-out 5; }
 
 @media screen and (max-width: 1366px) {
   html {

@@ -140,4 +140,23 @@ $(document).ready(function(){
   nextSteps.css('left', prevSteps.width() + 20 + bulletsSteps.width() + 22);
   bulletsSteps.css('left', prevSteps.width() + 25);
 
+  var controlFlag = false,
+      typesFlag = false;
+      designFlag = false;
+
+  $(window).scroll(function() {    
+  if (($(this).scrollTop() > 600) && (controlFlag == false)){   
+      $('.control__section-title-heading').addClass("apperwhite");
+      controlFlag = true;    
+    }
+    if (($(this).scrollTop() > 1700) && (typesFlag == false)){  
+      $('.section-title__types').addClass("apperBlack");
+      typesFlag = true;
+    }
+    if (($(this).scrollTop() > 2500) && (designFlag == false)){  
+      $('.section-title__design').addClass("apperBlack");
+      typesFlag = true;
+    }
+  });
+
 });
