@@ -37,7 +37,6 @@ $(document).ready(function(){
       btnModal = $('[data-toggle=modal]'),
       btnClose = $('.modal__close'),
       btnScrolUp = $('.button__scroll-up'),
-      btnScrollDown = $('.hero__scroll-down'),
       btnScrollUpLogo = $('.logo__link'),
       btnScrollUpMain = $('.nav__item--main'),
       label = $('.label'),
@@ -106,11 +105,11 @@ $(document).ready(function(){
       return false;
   });
 
-  btnScrollDown.on('click', function(){
-    $('body, html').animate({
-      scrollTop: 680
-    }, 1000);
-    return false; 
+  $('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();  
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 1000, 'linear');
   });
 
   var mySwiper = new Swiper ('.swiper-container', {
