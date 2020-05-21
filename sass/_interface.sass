@@ -52,14 +52,21 @@
     padding-bottom: 0.55rem
     &::placeholder
       color: $dark-second
+  &-group
+    position: relative    
 .policy
   &__checkbox
     opacity: 0
     visibility: hidden
     &:checked +
+      .invalid +
+        .policy__label
+          &::before
+            background: $primary url("../img/modal/okCheck.svg") no-repeat center / 0.8rem   
+    &:checked +
       .policy__label
         &::before
-          background: $primary url("../img/modal/okCheck.svg") no-repeat center / 0.8rem    
+          background: $primary url("../img/modal/okCheck.svg") no-repeat center / 0.8rem            
   &--light
     color: $light          
   &__label
@@ -78,8 +85,33 @@
       justify-content: center 
       font-size: 1.142rem  
 .invalid
+  position: absolute
+  left: 0
+  bottom: -50%
   color: tomato
   padding-top: 0.5rem
 .input
   &.invalid
-    border-bottom: 1px solid tomato        
+    position: relative
+    border-bottom: 1px solid tomato  
+    left: 0
+    bottom: 0  
+.policy  
+  &__checkbox
+    &.invalid
+      position: relative
+      left: 0
+      bottom: 0    
+.control
+  &__policy
+    position: relative        
+.modal
+  &__policy
+    position: relative  
+.footer
+  &__policy
+    position: relative     
+#footerPolicyCheckbox-error
+  left: 25%          
+#controlPolicyCheckbox-error  
+  left: 25%   

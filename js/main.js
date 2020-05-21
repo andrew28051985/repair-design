@@ -175,8 +175,10 @@ $(document).ready(function(){
         email: true
       },
       userPhone: {
-        required: true,
-        tel: true
+        required: true
+      },
+      modalPolicyCheckbox: {
+        required: true
       }
     },
 
@@ -191,8 +193,10 @@ $(document).ready(function(){
         email: "Введите корректный Email вида name@domain.com"
       },
       userPhone: {
-        required: "Заполните поле",
-        tel: "Ваш номер должен иметь вид +7 (000) 000-00-00"
+        required: "Заполните поле"        
+      },
+      modalPolicyCheckbox: {
+        required: "Согласитесь на обработку данных" 
       }
     }
   });
@@ -207,8 +211,10 @@ $(document).ready(function(){
         maxlength: 15
       }, 
       userPhone: {
-        required: true,
-        tel: true
+        required: true
+      },
+      controlPolicyCheckbox: {
+        required: true
       }
     },
 
@@ -219,8 +225,10 @@ $(document).ready(function(){
         maxlength: "Имя не должно быть более 15 букв"
       },
       userPhone: {
-        required: "Заполните поле",
-        tel: "Ваш номер должен иметь вид +7 (000) 000-00-00"
+        required: "Заполните поле"
+      },
+      controlPolicyCheckbox: {
+        required: "Согласитесь на обработку данных" 
       }
     }
   });
@@ -240,8 +248,10 @@ $(document).ready(function(){
         maxlength: 25 
       },
       userPhone: {
-        required: true,
-        tel: true
+        required: true
+      },
+      footerPolicyCheckbox: {
+        required: true
       }
     },
 
@@ -257,8 +267,10 @@ $(document).ready(function(){
         maxlength: "Вопрос не более 25 символов"
       },
       userPhone: {
-        required: "Заполните поле",
-        tel: "Ваш номер должен иметь вид +7 (000) 000-00-00"
+        required: "Заполните поле"
+      },
+      footerPolicyCheckbox: {
+        required: "Согласитесь на обработку данных" 
       }
     }
   });

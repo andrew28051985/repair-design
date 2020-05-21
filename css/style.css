@@ -418,10 +418,14 @@ template {
       color: #363636; }
     .input--dark::placeholder {
       color: #363636; }
+  .input-group {
+    position: relative; }
 
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
+  .policy__checkbox:checked + .invalid + .policy__label::before {
+    background: #e3b873 url("../img/modal/okCheck.svg") no-repeat center/0.8rem; }
   .policy__checkbox:checked + .policy__label::before {
     background: #e3b873 url("../img/modal/okCheck.svg") no-repeat center/0.8rem; }
 
@@ -445,11 +449,37 @@ template {
     font-size: 1.142rem; }
 
 .invalid {
+  position: absolute;
+  left: 0;
+  bottom: -50%;
   color: tomato;
   padding-top: 0.5rem; }
 
 .input.invalid {
-  border-bottom: 1px solid tomato; }
+  position: relative;
+  border-bottom: 1px solid tomato;
+  left: 0;
+  bottom: 0; }
+
+.policy__checkbox.invalid {
+  position: relative;
+  left: 0;
+  bottom: 0; }
+
+.control__policy {
+  position: relative; }
+
+.modal__policy {
+  position: relative; }
+
+.footer__policy {
+  position: relative; }
+
+#footerPolicyCheckbox-error {
+  left: 25%; }
+
+#controlPolicyCheckbox-error {
+  left: 25%; }
 
 *, *:after, *:before {
   box-sizing: border-box; }
