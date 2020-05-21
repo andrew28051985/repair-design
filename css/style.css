@@ -1056,6 +1056,10 @@ img {
     margin: 0; }
   .footer__link {
     text-decoration: none; }
+    .footer__link-email-mobile {
+      display: none; }
+    .footer__link-instagram-mobile {
+      display: none; }
   .footer__map {
     display: flex;
     justify-content: center;
@@ -1522,11 +1526,18 @@ img {
   .footer {
     background: #131313; }
     .footer__title {
-      font-size: 1.6rem;
-      letter-spacing: 0.05rem;
-      margin-bottom: 4.6rem; }
+      font-size: 1.7rem;
+      letter-spacing: 0.0rem;
+      margin-bottom: 4.7rem;
+      margin-left: 0rem; }
       .footer__title-bottom {
-        order: 1; }
+        order: 1;
+        line-height: 2rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.07rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        padding-right: 0; }
     .footer__input {
       font-size: 1.5rem; }
       .footer__input-group {
@@ -1544,13 +1555,13 @@ img {
       display: none; }
     .footer__wrap {
       background: #131313;
-      margin-bottom: 3.28rem;
+      margin-bottom: 3.7rem;
       padding: 0; }
     .footer__policy {
       margin-bottom: 5.7rem;
       margin-right: 0; }
     .footer__social-links {
-      max-width: 7.14rem;
+      max-width: 8.4rem;
       width: 100%;
       order: 2; }
     .footer__map {
@@ -1558,13 +1569,26 @@ img {
       min-height: 18.21rem;
       margin-right: 0; }
     .footer__phone {
-      color: #e3b873; }
+      color: #e3b873;
+      font-size: 1.5rem;
+      letter-spacing: -0.03rem; }
+    .footer__icon-email {
+      margin-right: 1.5rem; }
+    .footer__link-email {
+      display: none; }
+      .footer__link-email-mobile {
+        display: inline-block; }
+    .footer__link-instagram {
+      display: none; }
+      .footer__link-instagram-mobile {
+        display: inline-block; }
   .policy__label--center {
     justify-content: flex-start;
     font-size: 1.1rem;
     letter-spacing: 0.11rem; }
   .map--mobile {
-    display: block; }
+    display: block;
+    margin-bottom: 3.4rem; }
   .map--desctop {
     display: none; } }
 
@@ -1575,7 +1599,9 @@ img {
     min-height: 12.78rem;
     height: 15rem; }
   .control__button {
-    padding: 1.5rem 36%; } }
+    padding: 1.5rem 36%; }
+  .footer__title-bottom {
+    font-size: 1rem; } }
 
 @media screen and (max-height: 630px) {
   .hero__scroll-down {
@@ -1596,8 +1622,16 @@ img {
     height: 320px; }
   .modal__input {
     margin-bottom: 0.5rem; }
+    .modal__input-group {
+      margin-bottom: 0.6rem; }
   .modal__policy {
     margin-bottom: 3rem; }
   .modal__title {
     margin-bottom: 0.5rem;
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .invalid {
+    left: 60px;
+    bottom: 45%; }
+  #controlPolicyCheckbox-error {
+    left: 3%;
+    bottom: -96%; } }

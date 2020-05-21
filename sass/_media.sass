@@ -302,11 +302,18 @@
   .footer
     background: $dark
     &__title
-      font-size: 1.6rem
-      letter-spacing: 0.05rem
-      margin-bottom: 4.6rem
+      font-size: 1.7rem
+      letter-spacing: 0.0rem
+      margin-bottom: 4.7rem
+      margin-left: 0rem      
       &-bottom
         order: 1
+        line-height: 2rem
+        font-size: 1.4rem
+        letter-spacing: 0.07rem
+        margin-bottom: 2rem
+        margin-left: 0
+        padding-right: 0
     &__input
       font-size: 1.5rem
       &-group
@@ -324,13 +331,13 @@
       display: none
     &__wrap
       background: $dark
-      margin-bottom: 3.28rem  
+      margin-bottom: 3.7rem  
       padding: 0    
     &__policy
       margin-bottom: 5.7rem
       margin-right: 0 
     &__social-links
-      max-width: 7.14rem
+      max-width: 8.4rem
       width: 100%
       order: 2      
     &__map
@@ -339,6 +346,20 @@
       margin-right: 0
     &__phone
       color: $primary  
+      font-size: 1.5rem
+      letter-spacing: -0.03rem
+    &__icon
+      &-email
+        margin-right: 1.5rem  
+    &__link
+      &-email
+        display: none
+        &-mobile
+          display: inline-block
+      &-instagram
+        display: none
+        &-mobile
+          display: inline-block    
   .policy
     &__label--center
       justify-content: flex-start   
@@ -347,6 +368,7 @@
   .map
     &--mobile
       display: block
+      margin-bottom: 3.4rem
     &--desctop
       display: none   
 
@@ -360,6 +382,10 @@
       height: 15rem  
     &__button
       padding: 1.5rem 36%
+  .footer
+    &__title
+      &-bottom
+        font-size: 1rem    
 
 @media screen and (max-height: 630px)    
   .hero
@@ -380,10 +406,18 @@
       height: 320px
     &__input
       margin-bottom: 0.5rem
+      &-group
+        margin-bottom: 0.6rem
     &__policy
       margin-bottom: 3rem   
     &__title
       margin-bottom: 0.5rem
       font-size: 1.1rem    
+  .invalid
+    left: 60px
+    bottom: 45%    
+  #controlPolicyCheckbox-error  
+    left: 3%
+    bottom: -96%   
 
           
