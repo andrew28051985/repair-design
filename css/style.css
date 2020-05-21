@@ -481,6 +481,9 @@ template {
 #controlPolicyCheckbox-error {
   left: 25%; }
 
+.title--primary {
+  color: #e3b873; }
+
 *, *:after, *:before {
   box-sizing: border-box; }
 
@@ -989,7 +992,7 @@ img {
     margin: auto;
     padding: 2.5rem;
     margin-top: -4rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.5rem; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -998,6 +1001,13 @@ img {
     text-align: center;
     margin-bottom: 3.214rem;
     margin-top: 0; }
+    .footer__title-bottom {
+      max-width: 38.07rem;
+      margin: auto;
+      margin-bottom: 1.6rem;
+      padding-right: 1.5rem;
+      line-height: 1.99rem;
+      order: 0; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -1028,6 +1038,35 @@ img {
   .footer__menu {
     background: #131313;
     padding: 3.5rem 0; }
+  .footer__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer__social-links {
+    max-width: 6.8rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2.8rem;
+    order: 1; }
+  .footer__icon-email {
+    margin-right: 0.9rem; }
+  .footer__phone {
+    text-decoration: none;
+    margin: 0; }
+  .footer__link {
+    text-decoration: none; }
+  .footer__map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.6rem;
+    margin-right: 1.8rem;
+    max-width: 66rem;
+    width: 100%;
+    order: 2; }
+
+.map--mobile {
+  display: none; }
 
 .modal {
   opacity: 0;
@@ -1476,12 +1515,16 @@ img {
     display: none; }
   .ellipsis {
     display: inline-block; }
+  .ymaps-2-1-76-map {
+    height: 14rem; }
   .footer {
     background: #131313; }
     .footer__title {
       font-size: 1.6rem;
       letter-spacing: 0.05rem;
       margin-bottom: 4.6rem; }
+      .footer__title-bottom {
+        order: 1; }
     .footer__input {
       font-size: 1.5rem; }
       .footer__input-group {
@@ -1499,15 +1542,29 @@ img {
       display: none; }
     .footer__wrap {
       background: #131313;
-      margin-bottom: 0;
+      margin-bottom: 3.28rem;
       padding: 0; }
     .footer__policy {
       margin-bottom: 5.7rem;
       margin-right: 0; }
+    .footer__social-links {
+      max-width: 7.14rem;
+      width: 100%;
+      order: 2; }
+    .footer__map {
+      order: 0;
+      min-height: 18.21rem;
+      margin-right: 0; }
+    .footer__phone {
+      color: #e3b873; }
   .policy__label--center {
     justify-content: flex-start;
     font-size: 1.1rem;
-    letter-spacing: 0.11rem; } }
+    letter-spacing: 0.11rem; }
+  .map--mobile {
+    display: block; }
+  .map--desctop {
+    display: none; } }
 
 @media screen and (max-width: 370px) {
   .control__video {
