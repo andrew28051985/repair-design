@@ -1064,6 +1064,8 @@ img {
     max-width: 66rem;
     width: 100%;
     order: 2; }
+    .footer__map-api {
+      height: 34rem; }
 
 .map--mobile {
   display: none; }

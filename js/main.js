@@ -279,4 +279,37 @@ $(document).ready(function(){
 
   $('[type=tel]').mask("+7 (000) 000-00-00", {placeholder: "+7(___) ___-__-__"});
 
+  ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [47.208901, 39.631539],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 13
+        });
+      
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Турецкий ремонт квартир',
+        balloonContent: 'Вход через ТЦ, 2 этаж'
+    }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/geometka-64x64.png',
+        // Размеры метки.
+        iconImageSize: [34, 34],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+    }),
+    myMap.geoObjects
+        .add(myPlacemark); 
+    myMap.behaviors.disable('scrollZoom');    
+  }
 });

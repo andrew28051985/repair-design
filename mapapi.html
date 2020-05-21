@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=96140780-ab28-4860-8d9e-9ca90bbcc1d3&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 <body>
   <header class="header">
@@ -18,12 +20,12 @@
         </div>
         <!-- /.logo menu__logo -->
         <nav class="nav menu__nav wow bounceInDown"  data-wow-delay="0.4s">
-          <a href="#" class="nav__item nav__item--main nav__item--active">Главная</a>
+          <a href="index.html" class="nav__item">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
           <a href="#" class="nav__item">Замер</a>
           <a href="#" class="nav__item">Команда</a>
           <a href="#" class="nav__item">Отзывы</a>
-          <a href="mapapi.html#map" class="nav__item">Контакты</a>
+          <a href="#" class="nav__item nav__item--main nav__item--active">Контакты</a>
         </nav>
         <!-- /.nav -->
         <div class="contacts menu__contacts wow fadeInRightBig" data-wow-delay="0.3s">
@@ -735,13 +737,11 @@
         </div>
         <!-- /.social-links footer__social-links -->
   
-        <div class="map footer__map map--desctop">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabf1f593ce9118c4a3a5c3d7a324ba8046deac37ade15bb7ea7d498e127504d3&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div id="map" class="map footer__map footer__map-api">
+          
         </div>
         <!-- /.map footer__map -->
-        <div class="map footer__map map--mobile">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabf1f593ce9118c4a3a5c3d7a324ba8046deac37ade15bb7ea7d498e127504d3&amp;width=100%25&amp;height=255&amp;lang=ru_RU&amp;scroll=false"></script>
-        </div>
+        
         <!-- /.map footer__map -->
       </div>
       <!-- /.footer__description -->
@@ -756,12 +756,12 @@
             </div>
             <!-- /.logo menu__logo -->
             <nav class="nav menu__nav">
-              <a href="#" class="nav__item nav__item--main nav__item--active">Главная</a>
+              <a href="index.html" class="nav__item">Главная</a>
               <a href="#" class="nav__item">Проекты</a>
               <a href="#" class="nav__item">Замер</a>
               <a href="#" class="nav__item">Команда</a>
               <a href="#" class="nav__item">Отзывы</a>
-              <a href="mapapi.html#map" class="nav__item">Контакты</a>
+              <a href="#" class="nav__item nav__item--main nav__item--active">Контакты</a>
             </nav>
             <!-- /.nav -->
             <div class="contacts menu__contacts">
