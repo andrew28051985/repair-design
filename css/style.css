@@ -1536,6 +1536,7 @@ img {
     .control__text {
       color: #ffffff; }
   .design {
+    padding-bottom: 0;
     background: #131313; }
     .design__section-title, .design__title-text {
       color: #ffffff; }
