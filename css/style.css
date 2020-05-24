@@ -939,7 +939,8 @@ img {
 
 .design {
   position: relative;
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  padding-bottom: 40rem; }
   .design::after {
     content: "";
     position: absolute;
@@ -947,7 +948,7 @@ img {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 46%;
+    height: 67%;
     background: #131313; }
   .design__title-text {
     font-family: 'Futura Book', sans-serif;
@@ -968,6 +969,7 @@ img {
   display: none; }
 
 .steps__section {
+  display: none;
   padding-bottom: 35rem; }
 
 .steps__swiper-slide {
@@ -992,7 +994,8 @@ img {
     font-weight: normal; }
 
 .team {
-  margin-top: -35rem; }
+  position: relative;
+  margin-top: -32rem; }
   .team__title-text {
     color: #ffffff;
     max-width: 33rem;
