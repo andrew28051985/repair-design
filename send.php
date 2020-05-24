@@ -12,6 +12,7 @@ require 'phpmailer/Exception.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail->CharSet = "UTF-8";
 
 try {
     //Server settings
@@ -33,8 +34,15 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}. Его вопрос: ${userQuestion}";
 
-    $mail->send();
-    header('Location: thanks.html');
+    if ($mail->send()) {
+        header('Location: thanks.html');
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+    
+    
+ /*   $mail->send();
+    header('Location: thanks.html');*/
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
