@@ -33,6 +33,7 @@
 $(document).ready(function(){
 
   var modal = $('.modal'),
+      modalAjax = $('.modal__ajax'),
       clsModalOnClick = $('.modal__dialog'),
       btnModal = $('[data-toggle=modal]'),
       btnClose = $('.modal__close'),
@@ -40,28 +41,33 @@ $(document).ready(function(){
       btnScrollUpLogo = $('.logo__link'),
       btnScrollUpMain = $('.nav__item--main'),
       label = $('.control__label'),
-      input = $('.control__input');
-      policy = $('.control__policy')
+      input = $('.control__input'),
+      policy = $('.control__policy'),
+      formVisible = $('.control__form'),
+      controlTextForm = $('.control__text--novisible');
 
   btnModal.on('click', function(){
-    modal.toggleClass('modal--visible');
+    modal.toggleClass('modal--visible');    
   });   
 
   new WOW().init();
 
   btnClose.on('click', function(){
-    modal.toggleClass('modal--visible');
+    modal.removeClass('modal--visible');
+    modalAjax.removeClass('modal__ajax--visible');
   });
 
   $(document).keydown(function (e) { 
     if (e.which == 27) {
       modal.removeClass('modal--visible');
+      modalAjax.removeClass('modal__ajax--visible');
     }
   });
 
   $(document).on('click', function(e) {
-    if ($(e.target).hasClass('modal')) {
+    if (($(e.target).hasClass('modal')) || ($(e.target).hasClass('modal__ajax'))) {
       modal.removeClass('modal--visible');
+      modalAjax.removeClass('modal__ajax--visible');
     }    
   });
 
@@ -198,6 +204,19 @@ $(document).ready(function(){
       modalPolicyCheckbox: {
         required: "Согласитесь на обработку данных" 
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $('.modal__form').serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Сервер сказал - ' +response);
+          $('.modal__form')[0].reset();
+          modal.removeClass('modal--visible');
+          modalAjax.addClass('modal__ajax--visible');
+        }
+      });
     }
   });
 
@@ -230,6 +249,19 @@ $(document).ready(function(){
       controlPolicyCheckbox: {
         required: "Согласитесь на обработку данных" 
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $('.control__form').serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Сервер сказал - ' +response);
+          $('.control__form')[0].reset();
+          formVisible.addClass('control__form--novisible'); 
+          controlTextForm.removeClass('control__text--novisible');
+        }
+      });
     }
   });
 
@@ -272,6 +304,18 @@ $(document).ready(function(){
       footerPolicyCheckbox: {
         required: "Согласитесь на обработку данных" 
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $('.footer__form').serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Сервер сказал - ' +response);
+          $('.footer__form')[0].reset();
+          modalAjax.addClass('modal__ajax--visible');
+        }
+      });
     }
   });
 

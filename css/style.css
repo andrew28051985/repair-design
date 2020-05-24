@@ -849,6 +849,12 @@ img {
     height: 2px;
     border-radius: 2.143rem;
     background: #e3b873; }
+  .control__text--novisible {
+    display: none; }
+
+.control__vksend {
+  text-decoration: none;
+  color: #e3b873; }
 
 .control__form {
   display: flex;
@@ -856,6 +862,8 @@ img {
   flex-wrap: wrap;
   max-width: 55rem;
   margin: auto; }
+  .control__form--novisible {
+    display: none; }
 
 .control__input {
   padding: 0;
@@ -1092,6 +1100,24 @@ img {
   .modal--visible {
     opacity: 1;
     visibility: visible; }
+  .modal__ajax {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.6); }
+    .modal__ajax--visible {
+      opacity: 1;
+      visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.35rem;
