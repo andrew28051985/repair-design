@@ -990,6 +990,77 @@ img {
     font-style: normal;
     font-weight: normal; }
 
+.clients {
+  padding-bottom: 23.4rem;
+  background: #ffffff url("../img/bg-line.svg") no-repeat center/cover; }
+  .clients__section {
+    margin-bottom: 3rem; }
+    .clients__section-title {
+      margin-bottom: 1.7rem; }
+      .clients__section-title-heading {
+        margin-bottom: 1rem; }
+  .clients__title-text {
+    margin-top: 1.4rem;
+    max-width: 25.714rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.03rem; }
+  .clients__card {
+    position: relative;
+    background: #ffffff;
+    padding: 1.71rem 2.5rem 4rem 1.5rem;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
+  .clients__row {
+    margin-left: 0.7rem; }
+  .clients__block {
+    display: flex; }
+  .clients__avatar {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1.6rem; }
+  .clients__name {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.643rem;
+    color: #181818;
+    max-width: 14.07rem; }
+  .clients__comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.0714rem;
+    line-height: 182%;
+    color: #959595;
+    margin-top: 0.7rem; }
+  .clients__info {
+    position: absolute;
+    left: 0;
+    bottom: -1.8rem;
+    display: flex;
+    color: #ffffff;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.21rem;
+    line-height: 1.71rem; }
+    .clients__info img {
+      margin-right: 1rem; }
+  .clients__area {
+    background: #e3b873;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #ffffff;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.3);
+    padding: 0.7rem 1.5rem; }
+  .clients__date {
+    background: #e3b873;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.3);
+    padding: 0.4rem 1.2rem;
+    min-width: 11.2rem;
+    width: 11.2rem; }
+
 .footer {
   background: #131313 url("../img/footer/footer-bg.png") no-repeat center/cover;
   margin-bottom: 0;
@@ -999,7 +1070,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     padding: 2.5rem;
-    margin-top: -4rem;
+    margin-top: -20rem;
     margin-bottom: 3.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -1282,7 +1353,13 @@ img {
 
 @media screen and (max-width: 1366px) {
   html {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .clients__info {
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 1261px) {
+  .clients__comment {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1292,7 +1369,10 @@ img {
   .hero__scroll-down {
     font-size: 1rem; }
   .section-title {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .clients__card {
+    padding-left: 1.5rem;
+    min-height: 37rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1339,7 +1419,13 @@ img {
     .design__col {
       margin-bottom: 4.29rem; }
     .design::after {
-      display: none; } }
+      display: none; }
+  .steps__section {
+    display: none; }
+  .clients {
+    display: none; }
+  .footer__wrap {
+    margin-top: 0; } }
 
 @media screen and (max-width: 772px) {
   .projects__col-40, .projects__col-60 {
@@ -1550,7 +1636,8 @@ img {
   .ymaps-2-1-76-map {
     height: 14rem; }
   .footer {
-    background: #131313; }
+    background: #131313;
+    padding-top: 0; }
     .footer__title {
       font-size: 1.7rem;
       letter-spacing: 0.0rem;
@@ -1625,9 +1712,7 @@ img {
     min-height: 12.78rem;
     height: 15rem; }
   .control__button {
-    padding: 1.5rem 36%; }
-  .footer__title-bottom {
-    font-size: 1rem; } }
+    padding: 1.5rem 36%; } }
 
 @media screen and (max-height: 630px) {
   .hero__scroll-down {

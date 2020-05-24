@@ -1,6 +1,13 @@
 @media screen and (max-width: 1366px)
   html
     font-size: 13px
+  .clients 
+    &__info
+      font-size: 1.1rem  
+@media screen and (max-width: 1261px)   
+  .clients
+    &__comment
+      font-size: 1rem     
 @media screen and (max-width: 1200px)  
   html
     font-size: 12px
@@ -12,6 +19,10 @@
   .section
     &-title
         font-size: 1.3rem      
+  .clients
+    &__card     
+      padding-left: 1.5rem
+      min-height: 37rem 
 @media screen and (max-width: 992px)      
   .nav
     display: none
@@ -67,7 +78,15 @@
     &__col
       margin-bottom: 4.29rem    
     &::after
-      display: none  
+      display: none 
+  .steps
+    &__section
+      display: none      
+  .clients
+    display: none    
+  .footer
+    &__wrap
+      margin-top: 0  
 @media screen and (max-width: 772px)
   .projects
     &__col-40, &__col-60          
@@ -296,11 +315,13 @@
   .item--none
     display: none  
   .ellipsis
-    display: inline-block 
+    display: inline-block  
   .ymaps-2-1-76-map
     height: 14rem
+
   .footer
     background: $dark
+    padding-top: 0
     &__title
       font-size: 1.7rem
       letter-spacing: 0.0rem
@@ -382,10 +403,7 @@
       height: 15rem  
     &__button
       padding: 1.5rem 36%
-  .footer
-    &__title
-      &-bottom
-        font-size: 1rem    
+   
 
 @media screen and (max-height: 630px)    
   .hero
