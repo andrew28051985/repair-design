@@ -47,7 +47,7 @@ $(document).ready(function(){
       controlTextForm = $('.control__text--novisible');
 
   btnModal.on('click', function(){
-    modal.toggleClass('modal--visible');    
+    modal.toggleClass('modal--visible'); 
   });   
 
   new WOW().init();
@@ -323,6 +323,22 @@ $(document).ready(function(){
 
   $('[type=tel]').mask("+7 (000) 000-00-00"/*, {placeholder: "+7(___) ___-__-__"}*/);
 
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    console.log('jrsdfdf');
+    player = new YT.Player('player', {
+      height: '434',
+      width: '817',
+      videoId: 'nrMroWql1BI',
+      events: {
+         'onReady': onPlayerReady
+        }
+      });
+    });
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  };
+
   ymaps.ready(init);
     function init(){
         // Создание карты.
@@ -355,24 +371,8 @@ $(document).ready(function(){
     myMap.geoObjects
         .add(myPlacemark); 
     myMap.behaviors.disable('scrollZoom');    
-  };
-
-  var player;
-  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
-    console.log('jrsdfdf');
-    player = new YT.Player('player', {
-      height: '434',
-      width: '817',
-      videoId: 'nrMroWql1BI',
-      events: {
-         'onReady': onPlayerReady
-        }
-      });
-    });
-  function onPlayerReady(event) {
-    event.target.playVideo();
   }
 
-     
+       
 
 });
