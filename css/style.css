@@ -887,6 +887,8 @@ img {
 .video__play {
   position: relative;
   margin: auto; }
+  .video__play:hover {
+    cursor: pointer; }
 
 .types {
   margin-bottom: 8.56rem; }

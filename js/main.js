@@ -355,5 +355,24 @@ $(document).ready(function(){
     myMap.geoObjects
         .add(myPlacemark); 
     myMap.behaviors.disable('scrollZoom');    
+  };
+
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    console.log('jrsdfdf');
+    player = new YT.Player('player', {
+      height: '434',
+      width: '817',
+      videoId: 'nrMroWql1BI',
+      events: {
+         'onReady': onPlayerReady
+        }
+      });
+    });
+  function onPlayerReady(event) {
+    event.target.playVideo();
   }
+
+     
+
 });
