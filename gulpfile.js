@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
 
 function bs() {
   serveSass();
@@ -52,7 +53,8 @@ function buildJS(done) {
     {
       ext:{
           min:'.js'
-      }
+      },
+      noSource: true
     }))
   .pipe(dest('dist/js/'));
 
@@ -68,5 +70,32 @@ function html(done) {
   done();  
 };
 
+function php(done) {
+  src(['**.php'])
+    .pipe(dest('dist/'));
+  src('phpmailer/**/**')  
+    .pipe(dest('dist/phpmailer/'))
+  done();  
+};
+
+function font(done) {
+  src('font/**/**')
+    .pipe(dest('dist/font/'));
+  done();  
+};
+
+function imagemin(done) {
+  src('img/clients/**')
+  src('img/**/*.jpg')
+    .pipe(tinypng({ key: '4sy4yB3GhKqXb0hLLzFPr4lB8KKkVj5X', }))
+    .pipe(dest('dist/img/'))   
+  src('img/**/*.png')
+    .pipe(tinypng({ key: '4sy4yB3GhKqXb0hLLzFPr4lB8KKkVj5X', }))
+    .pipe(dest('dist/img/'))   
+  src('img/**/*.svg')  
+    .pipe(dest('dist/img/'))
+  done();  
+};
+
 exports.serve = bs;
-exports.build = series(buildCSS, buildJS, html);
+exports.build = series(buildCSS, buildJS, html, php, font, imagemin);

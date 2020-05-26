@@ -1108,8 +1108,7 @@ img {
   padding: 1rem 3.214rem; }
 
 .clients {
-  padding-bottom: 23.4rem;
-  background: #ffffff url("../img/bg-line.svg") no-repeat center/cover; }
+  padding-bottom: 23.4rem; }
   .clients__section {
     margin-bottom: 3rem; }
     .clients__section-title {
@@ -1260,13 +1259,13 @@ img {
   .footer__map {
     display: flex;
     justify-content: center;
-    margin-bottom: 4.6rem;
+    margin-bottom: 4.7rem;
     margin-right: 1.8rem;
     max-width: 66rem;
     width: 100%;
     order: 2; }
     .footer__map-api {
-      height: 34rem; }
+      height: 33.21rem; }
 
 .map--mobile {
   display: none; }
@@ -1860,8 +1859,9 @@ img {
       order: 2; }
     .footer__map {
       order: 0;
-      min-height: 18.21rem;
-      margin-right: 0; }
+      max-height: 21.2rem;
+      margin-right: 0;
+      margin-bottom: 3.49rem; }
     .footer__phone {
       color: #e3b873;
       font-size: 1.5rem;

@@ -258,8 +258,9 @@ $(document).ready(function(){
         success: function (response) {
           console.log('Ajax сработал. Сервер сказал - ' +response);
           $('.control__form')[0].reset();
-          formVisible.addClass('control__form--novisible'); 
-          controlTextForm.removeClass('control__text--novisible');
+          //formVisible.addClass('control__form--novisible'); 
+          //controlTextForm.removeClass('control__text--novisible');
+          modalAjax.addClass('modal__ajax--visible');
         }
       });
     }
@@ -350,7 +351,7 @@ $(document).ready(function(){
             center: [47.208901, 39.631539],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
-            zoom: 13
+            zoom: 15 
         });
       
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
