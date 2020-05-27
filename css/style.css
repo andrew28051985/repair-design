@@ -346,7 +346,8 @@ template {
   width: 35%; }
 
 .col-40 {
-  max-width: 40%; }
+  max-width: 40%;
+  margin-right: 2rem; }
 
 .col-50 {
   -ms-flex-preferred-size: 50%;
