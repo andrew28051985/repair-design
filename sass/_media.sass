@@ -426,12 +426,7 @@
     &__social-links
       max-width: 8.4rem
       width: 100%
-      order: 2      
-    &__map
-      order: 0
-      max-height: 21.2rem
-      margin-right: 0
-      margin-bottom: 3.49rem;
+      order: 2          
     &__phone
       color: $primary  
       font-size: 1.5rem
@@ -453,12 +448,11 @@
       justify-content: flex-start   
       font-size: 1.1rem
       letter-spacing: 0.11rem   
-  .map
-    &--mobile
-      display: block
-      margin-bottom: 3.4rem
-    &--desctop
-      display: none   
+  .ymap-container
+    order: 0
+    max-height: 21.2rem
+    margin-right: 0
+    margin-bottom: 3.49rem      
 
 
 @media screen and (max-width: 370px)    
@@ -485,15 +479,19 @@
       max-width: 304px
       width: 100%
     &__text
-      width: 84%
+      width: 81.5%
     &__icon
       &-1, &-2, &-3
         max-width: 60px
         max-height: 60px
         top: -29px
-        left: -7px     
+        left: -7px        
+@media screen and (max-width: 327px)
+  .foto
+    &__text
+      width: 19.3rem
     &__experience
-      padding: 1.4rem 3.81rem            
+      font-size: 0.955rem               
    
 
 @media screen and (max-height: 630px)    

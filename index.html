@@ -7,8 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=96140780-ab28-4860-8d9e-9ca90bbcc1d3&lang=ru_RU" ></script>
+  <link rel="stylesheet" href="css/style.css">  
   <link rel="icon" href="http://andrewkrisanov-web.ru/repair-design/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="http://andrewkrisanov-web.ru/repair-design/favicon.ico" type="image/x-icon">
 </head>
@@ -958,11 +957,13 @@
           </a> <!-- /.footer__link-instagram -->
         </div>
         <!-- /.social-links footer__social-links -->
-  
-        <div id="map" class="map footer__map footer__map-api">
-          
+
+        <div class="ymap-container">
+          <div class="loader loader-default"></div>
+          <div id="map-yandex"></div>
         </div>
-        <!-- /.map footer__map -->
+        <!-- .ymap-container -->
+
       </div>
       <!-- /.footer__description -->
 

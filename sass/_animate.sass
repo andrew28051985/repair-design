@@ -44,6 +44,18 @@
   to 
     margin-left: 0    
 
+@keyframes rotation 
+  from 
+    transform: rotate(0)
+  to 
+    transform: rotate(359deg)
+    
+@keyframes blink 
+  from 
+    opacity: 0.5
+  to 
+    opacity: 1   
+
 .apperwhite
   animation: apperwhite 2s 0.5s ease-in 1
   animation-fill-mode: both
@@ -52,3 +64,4 @@
   animation-fill-mode: both  
 .animBounce
   animation: bounce 1.2s 4.3s ease-in-out 5 
+
