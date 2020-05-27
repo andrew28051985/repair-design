@@ -35,7 +35,9 @@ function serveSass() {
   return src("./sass/**/*.sass", "./sass/**/*.scss")
       .pipe(sass())
       .pipe(autoprefixer({
-        cascade: false }))
+        cascade: true,
+        browsers: ['last 4 versions']
+      }))
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
 };
@@ -99,3 +101,5 @@ function imagemin(done) {
 
 exports.serve = bs;
 exports.build = series(buildCSS, buildJS, html, php, font, imagemin);
+exports.serveSass = serveSass;
+exports.buildCSS = buildCSS;
