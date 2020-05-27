@@ -9,10 +9,15 @@
       margin-bottom: 3.2rem
     &__experience
       padding: 1rem 3.8rem          
-@media screen and (max-width: 1261px)   
-  .clients
-    &__comment
-      font-size: 1rem     
+@media screen and (max-width: 1271px)   
+  .clients     
+    &__card
+      min-height: 36rem  
+    &__avatar
+      width: 70px
+      height: 70px
+      margin-right: 1rem
+
 @media screen and (max-width: 1200px)  
   html
     font-size: 12px
@@ -29,9 +34,16 @@
       width: 17.9rem
       height: 9.78rem      
   .clients
+    &__comment
+      font-size: 1rem 
     &__card     
       padding-left: 1.5rem
-      min-height: 37rem 
+      padding-right: 1.5rem
+      min-height: 32rem 
+    &__avatar
+      width: 50px
+      height: 50px  
+      margin-right: 0.5rem
 @media screen and (max-width: 992px)      
   .nav
     display: none
@@ -245,10 +257,11 @@
       letter-spacing: 0.05rem
       bottom: -8.9rem
       padding: 1.5rem 10.9rem
+      width: 100%
     &__video
       background: url('../img/control/photo-1-mobi.jpg')
       max-width: 29.28rem
-      width: 28.2rem
+      width: 100%
       min-height: 14.78rem
       height: 17rem  
       margin-bottom: 2.5rem
@@ -454,16 +467,7 @@
     margin-right: 0
     margin-bottom: 3.49rem      
 
-
-@media screen and (max-width: 370px)    
-  .control
-    &__video
-      max-width: 23.28rem
-      width: 28.2rem
-      min-height: 12.78rem
-      height: 15rem  
-    &__button
-      padding: 1.5rem 36%
+@media screen and (max-width: 380px)
   .team
     &__col-30
       width: 100%
@@ -473,7 +477,17 @@
       width: 100%
       &--wrap
         max-width: 304px
-        width: 100%   
+        width: 100%  
+@media screen and (max-width: 370px)    
+  .control
+    &__video
+      max-width: 23.28rem
+      width: 100%
+      min-height: 12.78rem
+      height: 15rem  
+    &__button
+      padding: 1.5rem 36%
+   
   .foto
     &__image
       max-width: 304px
