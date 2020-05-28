@@ -183,7 +183,7 @@ $(document).ready(function(){
           $('.modal__form')[0].reset();
           modal.removeClass('modal--visible');
           modalAjax.addClass('modal__ajax--visible');
-          ym('64423690', 'reachGoal', 'formSend'); return true;
+          ym('64423690','reachGoal','formSend'); return true;
         }
       });
     }
