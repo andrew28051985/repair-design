@@ -103,3 +103,5 @@ exports.serve = bs;
 exports.build = series(buildCSS, buildJS, html, php, font, imagemin);
 exports.serveSass = serveSass;
 exports.buildCSS = buildCSS;
+exports.buildJS = buildJS;
+exports.html = html;

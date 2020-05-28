@@ -215,6 +215,7 @@ $(document).ready(function(){
           $('.modal__form')[0].reset();
           modal.removeClass('modal--visible');
           modalAjax.addClass('modal__ajax--visible');
+          ym('64423690', 'reachGoal', 'formSend'); return true;
         }
       });
     }
@@ -389,7 +390,8 @@ function init () {
     //controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
   });
   var myPlacemarkTemp = new ymaps.Placemark([47.208901, 39.631539], {
-      balloonContent: "Здесь может быть ваш адрес",
+      hintContent: 'Турецкий ремонт квартир',
+      balloonContent: 'Вход через ТЦ, 2 этаж'
   }, {
       // Опции.
       // Необходимо указать данный тип макета.
