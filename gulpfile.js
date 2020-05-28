@@ -87,7 +87,7 @@ function font(done) {
 };
 
 function imagemin(done) {
-  src('img/clients/**')
+  
   src('img/**/*.jpg')
     .pipe(tinypng({ key: '4sy4yB3GhKqXb0hLLzFPr4lB8KKkVj5X', }))
     .pipe(dest('dist/img/'))   

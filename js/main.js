@@ -1,35 +1,3 @@
-/*document.addEventListener("DOMContentLoaded", function(event) { 
-  const modal = document.querySelector('.modal');
-  const btnModal = document.querySelectorAll('[data-toggle=modal]');
-  const btnClose = document.querySelector('.modal__close');
-  const switchModal = () => {
-    modal.classList.toggle('modal--visible');
-  }
-  const clsModalOnClick = document.querySelector('.modal__dialog');
-  
-
-  btnModal.forEach(element => {
-    element.addEventListener('click', switchModal);
-  });
-
-  btnClose.addEventListener('click', switchModal);
-  
-  document.onkeydown = function(e) {
-    if (e.keyCode == 27) {
-      modal.classList.remove('modal--visible');
-    }
-  }  
-
-  modal.addEventListener('click', function (e) {
-    if (!clsModalOnClick.contains(e.target) ) {
-      modal.classList.remove('modal--visible');
-    }
-});
-
-});*/ 
-
-/* далее код будет на JQuery */
-
 $(document).ready(function(){
 
   var modal = $('.modal'),
@@ -340,40 +308,6 @@ $(document).ready(function(){
   function onPlayerReady(event) {
     event.target.playVideo();
   };
-
-  /*ymaps.ready(init);
-    function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [47.208901, 39.631539],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 15 
-        });
-      
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Турецкий ремонт квартир',
-        balloonContent: 'Вход через ТЦ, 2 этаж'
-    }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/geometka-64x64.png',
-        // Размеры метки.
-        iconImageSize: [34, 34],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-    }),
-    myMap.geoObjects
-        .add(myPlacemark); 
-    myMap.behaviors.disable('scrollZoom');    
-  }*/
 
   //Переменная для включения/отключения индикатора загрузки
 var spinner = $('.ymap-container').children('.loader');
