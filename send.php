@@ -18,21 +18,21 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+    $mail->Host       = 'ssl://smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'andrewkrisanov@gmail.com';                     // SMTP username
-    $mail->Password   = 'afrflvbyfv25';                               // SMTP password
+    $mail->Username   = 'korotkov915@gmail.com';                     // SMTP username
+    $mail->Password   = '010203456';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('andrewkrisanov@gmail.com', 'Заявка с сайта');
-    $mail->addAddress('korotkov915@gmail.com');     // Add a recipient
+    $mail->setFrom('korotkov915@gmail.com', 'Заявка с сайта');
+    $mail->addAddress('andrewkrisanov@gmail.com');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}. Его вопрос: ${userQuestion}";
+    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}, Его вопрос: ${userQuestion}";
 
     if ($mail->send()) {
         echo "Ok";
